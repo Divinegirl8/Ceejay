@@ -1,7 +1,7 @@
 const Homepage:React.FC = () => {
     return(
         <div>
-                <div className='text-blue-400 font-bold'>hi God</div>
+                <div className='text-red-200 font-bold'></div>
         </div>
     )
 }
