@@ -24,7 +24,7 @@ const Footer:React.FC = () =>{
 
 
 
-        <div className="flex flex-col gap-6 md:border-l-[0.25px] border-[#62646C]  sm:px-14 md:px-4 px-5 md:border-r-[0.25px]  md:border-b-0 border-b-[0.25px]  md:pt-20 lg:pt-10 pt-10 md:py-0 py-4 ">
+        <div className="flex flex-col gap-6 md:border-l-[0.25px] border-[#62646C]  sm:px-14 xl:px-[5rem] md:px-4 px-5 md:border-r-[0.25px]  md:border-b-0 border-b-[0.25px]  md:pt-20 lg:pt-10 pt-10 md:py-0 xl:py-14 py-4 ">
             <h5 className="text-[#797C86] font-[600] text-[16px]">A MORE MEANINGFUL HOME FOR PHOTOGRAPHY</h5>
             <div>
             <div className="flex flex-row gap-5">
