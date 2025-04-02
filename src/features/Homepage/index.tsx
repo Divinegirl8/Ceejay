@@ -12,7 +12,6 @@ import arrUp from "../../assets/footer/arr-up.png"
 
 
 const Homepage:React.FC = () => {
-
    
     return(
         <div className="md:pt-[12rem] pt-[8rem]">
