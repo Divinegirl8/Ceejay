@@ -1,7 +1,9 @@
+import HeroPage from "../../components/HeroPage";
+
 const Homepage:React.FC = () => {
     return(
         <div>
-                <div className='text-red-200 font-bold'></div>
+            {/* <HeroPage/> */}
         </div>
     )
 }
