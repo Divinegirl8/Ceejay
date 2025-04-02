@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import luckyLogo from "../../assets/navbar/luckyLogo.png";
 import FilledButton from "../resuables/FilledButton";
 
@@ -16,7 +16,7 @@ const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="border-b-[0.25px] border-[#62646C] fixed w-full xl:px-30 px-4 z-50 top-0 bg-black ">
+    <div className="border-b-[0.25px] border-[#62646C] fixed w-full xl:px-20 px-4 z-50 top-0 bg-black ">
       <div className="flex flex-row justify-between border-x-1 border-x-[#62646C] xl:px-10  md:px-3 pt-8">
        
         <div>
@@ -26,7 +26,8 @@ const NavBar: React.FC = () => {
        
         <div className="text-[#AFB0B6] rounded-tl-[12px] rounded-tr-[12px] hidden   md:flex border-[0.25px] border-[#62646C] h-full items-center font-light">
           {navItems.map((item, index) => (
-            <span
+            <Link
+            to={item.path}
               key={index}
             className={` ${index === 0 ? " rounded-tl-[12px]" : ""} ${index === 3 ? "rounded-tr-[12px]" : ""} border-r-[0.25px] border-[#62646C] xl:px-10 md:px-8 h-[70px] inline-flex items-center cursor-pointer  ${
                 location.pathname === item.path
@@ -35,7 +36,7 @@ const NavBar: React.FC = () => {
               }`}
             >
               {item.name}
-            </span>
+            </Link>
           ))}
         </div>
 
@@ -67,22 +68,23 @@ const NavBar: React.FC = () => {
         
       </div>
 
-
    
 
         {menuOpen && (
         <div className="md:hidden flex flex-col bg-[#1C1C21] border-t border-[#62646C]">
           {navItems.map((item, index) => (
-            <span
+            <Link
+             to={item.path}
               key={index}
+              onClick={() => setMenuOpen(false)} 
               className={`py-4 text-center border-b border-[#62646C] cursor-pointer ${
                 location.pathname === item.path ? "text-white bg-[#2F2F37]" : "text-[#AFB0B6]"
               }`}
             >
               {item.name}
-            </span>
+            </Link>
           ))}
-          <div className="py-4 text-center">
+          <div className="py-4 text-center"  onClick={() => setMenuOpen(false)} >
             <FilledButton text="Contact Me" bgColor="#2F2F37" wdt="100%" color="white" />
           </div>
         </div>
