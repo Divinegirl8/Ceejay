@@ -42,7 +42,7 @@ const Footer:React.FC = () =>{
 
        <div className="md:flex md:flex-row sm:px-0 px-5 border-x-[0.25px] border-[#62646C] md:border-none">
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 sm:gap-[5rem] uppercase border-[#62646C] sm:px-14 md:px-10 px-4 md:border-r-[1px] pt-10 md:space-y-[2rem] sm:space-y-0 space-y-[2rem]">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 sm:gap-[5rem] uppercase border-[#62646C] sm:px-14 md:px-10 px-2 md:border-r-[1px] pt-10 md:space-y-[2rem] sm:space-y-0 space-y-[2rem]">
 
             {/* Column 1 */}
             <div className="flex flex-col gap-4">
