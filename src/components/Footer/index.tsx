@@ -23,7 +23,7 @@ const Footer:React.FC = () =>{
             <div className="flex flex-row gap-5">
              <h1 className="text-white font-[600] text-[48px]">Let’s</h1>
               <div className="bg-[#238EFF] w-[104px] h-[56px] flex items-center justify-center rounded-[50px]">
-                <img src={arrUp} className="w-8 h-8"/>
+                <img src={arrUp} className="w-5 h-5"/>
               </div>
              </div>
              <h5 className="text-white font-[600] text-[48px]">Work Together</h5>
