@@ -6,9 +6,8 @@ import rock from "../../assets/services/rock.png";
 import darkStar from "../../assets/services/darkStar.png";
 import { Link } from "react-router-dom";
 import FilledButton from "../../components/resuables/FilledButton";
-import ai from "../../assets/services/ai1.jpg"
-import machine from "../../assets/services/machine.jpg"
-
+import ai from "../../assets/services/ai1.jpg";
+import machine from "../../assets/services/machine.jpg";
 
 const serviceItems = [
     {
@@ -54,17 +53,26 @@ const serviceItems = [
 
 const ServicesIntro = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isVisible, setIsVisible] = useState(true);
 
     const nextService = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === serviceItems.length - 1 ? 0 : prevIndex + 1
-        );
+        setIsVisible(false); 
+        setTimeout(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === serviceItems.length - 1 ? 0 : prevIndex + 1
+            );
+            setIsVisible(true); 
+        }, 100); 
     };
 
     const prevService = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? serviceItems.length - 1 : prevIndex - 1
-        );
+        setIsVisible(false); 
+        setTimeout(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === 0 ? serviceItems.length - 1 : prevIndex - 1
+            );
+            setIsVisible(true); 
+        }, 100); 
     };
 
     return (
@@ -111,21 +119,22 @@ const ServicesIntro = () => {
                 <div className="flex justify-center mt-10">
                     <img
                         src={serviceItems[currentIndex].image}
-                        className="w-[50rem] h-[20rem] sm:h-[30rem] sm:w-[50rem] xl:hidden"
+                        className={`w-[50rem] h-[20rem] sm:h-[30rem] sm:w-[50rem] xl:hidden transition-all duration-500 ease-in-out opacity-${isVisible ? '100' : '0'}`}
                         alt="Service Image"
                     />
                 </div>
 
                 <div className="md:mt-22 mt-10 xl:flex xl:flex-row flex flex-col gap-16">
                     <div className="xl:w-[50%] w-full">
-                        <div className="flex flex-row gap-5">
-                            <h1 className="text-white font-[600] xl:text-[35px] text-[25px]">
-                                {serviceItems[currentIndex].title}
-                            </h1>
-                            <div className="bg-[#238EFF] w-[94px] h-[46px] flex items-center justify-center rounded-[50px]">
-                                <img src={arrUp} className="w-3 h-3" />
-                            </div>
+                    <div className="flex flex-row gap-5 w-full">
+                        <h1 className="text-white font-[600] xl:text-[35px] text-[25px] w-[calc(100%-70px)]">
+                            {serviceItems[currentIndex].title}
+                        </h1>
+                        <div className="bg-[#238EFF] w-[94px] h-[46px] flex items-center justify-center rounded-[50px]">
+                            <img src={arrUp} className="w-3 h-3" />
                         </div>
+                    </div>
+
 
                         <h4 className="text-[#CACACE] font-[500] text-[20px] uppercase mt-5">
                             {serviceItems[currentIndex].subtitle}
@@ -158,7 +167,7 @@ const ServicesIntro = () => {
                     <div className="flex justify-center items-center w-full h-full xl:w-[50%]">
                         <img
                             src={serviceItems[currentIndex].image}
-                            className="w-full max-w-[100rem] h-auto max-h-[35rem] object-contain xl:block hidden"
+                            className={`w-full max-w-[100rem] h-auto max-h-[35rem] object-contain xl:block hidden transition-all duration-500 ease-in-out opacity-${isVisible ? '100' : '0'}`}
                         />
                     </div>
                 </div>
