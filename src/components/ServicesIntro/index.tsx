@@ -37,7 +37,7 @@ const ServicesIntro = () =>{
                 </div>
 
                 <div>
-                    <img src={rock} className="w-[100rem] h-[23rem] sm:h-[30rem] sm:w-[50rem]  md:hidden mt-10" />
+                    <img src={rock} className="w-[70rem] h-[24rem] sm:h-[30rem] sm:w-[50rem]  md:hidden mt-10" />
                 </div>
 
              <div className="md:mt-22 mt-10 md:flex md:flex-row flex flex-col gap-16">
