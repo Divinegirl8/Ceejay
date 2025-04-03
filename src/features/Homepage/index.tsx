@@ -101,7 +101,7 @@ const Homepage:React.FC = () => {
                                 </div>
 
 
-                                <div className=" sm:hidden xl:hidden md:flex md:flex-row justify-between gap-5 hidden">
+                                <div className=" sm:hidden xl:hidden md:flex md:flex-row justify-between gap-3 hidden">
 
                                 <Link to={"/"}>
                                    <FilledButton text="Let’s Work" bgColor="#2F2F37" wdt="100px" color="white" />

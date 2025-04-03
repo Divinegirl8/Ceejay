@@ -36,11 +36,15 @@ const ServicesIntro = () =>{
                             </div>
                 </div>
 
-                <div>
-                    <img src={rock} className="w-[70rem] h-[24rem] sm:h-[30rem] sm:w-[50rem]  md:hidden mt-10" />
-                </div>
+                <div className="flex justify-center mt-10">
+    <img 
+        src={rock} 
+        className="w-[50rem] h-[20rem] sm:h-[30rem] sm:w-[50rem] xl:hidden " 
+        alt="Rock Image"
+    />
+</div>
 
-             <div className="md:mt-22 mt-10 md:flex md:flex-row flex flex-col gap-16">
+             <div className="md:mt-22 mt-10 xl:flex xl:flex-row flex flex-col gap-16">
                 <div>
                    <div className="flex flex-row gap-5">
                         <h1 className="text-white font-[600] xl:text-[35px] text-[25px]">GAME & ENVIRONMENT DESIGN</h1>
@@ -81,11 +85,11 @@ const ServicesIntro = () =>{
                   </div>
                 </div>
 
-                <div>
-                    <img src={rock} className="w-[100rem] h-[35rem] md:block hidden" />
+                <div className="flex justify-center items-center w-full h-full">
+                    <img src={rock} className="w-full max-w-[100rem] h-auto max-h-[35rem] object-contain xl:block hidden" />
                 </div>
 
-            </div>
+            </div >
 
             <div className="flex justify-center items-center h-full w-full mt-[-2rem]">
                <div className="md:hidden flex flex-row gap-3 border-[0.25px] border-[#62646C] rounded-[20px] p-1 md:w-[6rem] w-[6rem] h-12 justify-center items-center">
