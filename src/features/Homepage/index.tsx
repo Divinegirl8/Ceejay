@@ -7,7 +7,8 @@ import twitter from "../../assets/about/twitter.png"
 import linkedin from "../../assets/about/linkedin.png"
 import HeroPage from "../../components/HeroPage";
 import ServicesIntro from "../../components/ServicesIntro";
-
+import logo from "../../assets/homepage/logo.png"
+import moblogo from "../../assets/homepage/mobLogo.png"
 
 
 
@@ -135,6 +136,13 @@ const Homepage:React.FC = () => {
         </div>
 
          {/* ABOUT ENDS */}
+
+         <div className=" mt-14 flex justify-end flex-row sm:px-22 px-5">
+
+            <img src={logo} className="w-[15rem] h-[10rem] hidden sm:block"/>
+            <img src={moblogo} className="w-[10rem] h-[7rem] sm:hidden"/>
+
+         </div>
 
         </div>
     )
