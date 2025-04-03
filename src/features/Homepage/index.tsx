@@ -5,10 +5,12 @@ import star from "../../assets/about/start.png";
 import facebook from "../../assets/about/fb.png";
 import twitter from "../../assets/about/twitter.png"
 import linkedin from "../../assets/about/linkedin.png"
-import InfoMove from "../../components/InfoMove";
-import aiPix from "../../assets/heropage/ai.png"
-import mobAi from "../../assets/heropage/mob-ai.png"
+import HeroPage from "../../components/HeroPage";
+import arrR from "../../assets/services/arrRight.png"
+import arrL from "../../assets/services/arrLeft.png"
 import arrUp from "../../assets/footer/arr-up.png" 
+import rock from "../../assets/services/rock.png"
+
 
 
 const Homepage:React.FC = () => {
@@ -16,39 +18,60 @@ const Homepage:React.FC = () => {
     return(
         <div className="md:pt-[12rem] pt-[8rem]">
 
-            <div className="sm:flex sm:flex-row justify-between xl:px-20 px-5 flex flex-col gap-4 md:gap-0">
+           <HeroPage/>
+
+               {/* SERVICES START */}
+           <div className="xl:px-20 px-5 md:px-3">
+                <div className="text-white md:pt-40 pt-20 border-b-[0.25px] border-[#62646C] pb-5 ">
+                            <p className="text-[#797C86] xl:text-[16px] text-[14px] font-[600]">SERVICES</p>
+                            <div className="md:flex md:flex-row justify-between flex flex-col gap-4 md:gap-5">
+                                <h1 className="font-[600] xl:text-[40px] md:text-[35px] text-[28px] md:mb-0 mb-4">
+                                AI ART & PROMPT ENGINEERING SERVICES
+                                </h1>
+
+                                <div className="flex flex-row gap-3 border-[0.25px] border-[#62646C] rounded-[20px] p-1 md:w-[6rem] w-[6rem] h-12">
+                                <div className="bg-[#1C1C21] w-9 h-9 rounded-[50px] flex justify-center items-center">
+                                    <img src={arrR} className="w-3 h-3 cursor-pointer"/>
+                                </div>
 
 
-            <div>
-                <h2 className="text-[#62646C] font-[500] xl:text-[18px]">CUTTING-EDGE AI ART CREATIONS BY</h2>
-                <h1 className="text-[#E4E4E6] font-[600] xl:text-[60px] text-[40px] ">LUCKY EKEZIE</h1>
+                                <div className="bg-[#1C1C21] w-9 h-9 rounded-[50px] flex justify-center items-center">
+                                    <img src={arrL} className="w-3 h-3 cursor-pointer"/>
+                                </div>
+        
+                                </div>
+                        
+                                <Link to={"/"} >
+                                <FilledButton text="View All Services ->" bgColor="#2F2F37" wdt="150px" color="white" />
+                                </Link>
+                            </div>
+                </div>
+
+             <div className="mt-22 md:flex md:flex-row flex flex-col gap-16">
+                <div>
+                   <div className="flex flex-row gap-5">
+                        <h1 className="text-white font-[600] xl:text-[35px] text-[25px]">GAME & ENVIRONMENT DESIGN</h1>
+                        <div className="bg-[#238EFF] w-[94px] h-[46px]  flex items-center justify-center rounded-[50px]">
+                           <img src={arrUp} className="w-3 h-3"/>
+                         </div>
+                    </div>
+
+                  <h4 className="text-[#CACACE] font-[500] text-[20px] upper uppercase mt-5">Bring Virtual Worlds to Life</h4>
+                  <p className="text-[#797C86] font-[400] mt-5 text-[16px]">From designing immersive game environments and characters to crafting detailed gameplay and level designs, this service is ideal for video games, VR experiences, and interactive media. Create captivating worlds that engage players and audiences alike.</p>
+
+                  <div>
+                    <h4 className="text-[#CACACE] font-[500] text-[16px] mt-12">Service Highlights</h4>
+                  </div>
+                </div>
+
+                <div>
+                    <img src={rock} className="w-[80rem] h-[30rem]" />
+                </div>
+
             </div>
 
-            <div>
-           <div className="flex flex-row gap-5">
-             <h1 className="text-white font-[600] xl:text-[48px] text-[35px]">Let’s</h1>
-              <div className="bg-[#238EFF] w-[104px] h-[56px]  flex items-center justify-center rounded-[50px]">
-                <img src={arrUp} className="w-5 h-5"/>
-              </div>
-             </div>
-
-             <h5 className="text-white font-[600] xl:text-[48px] text-[35px]">Work Together</h5>
-
-         
-           </div>
             </div>
-
-             <div className="mt-10">
-             <InfoMove/>
-             </div>
-
-             <div className="px-20 hidden md:block">
-             <img src={aiPix} />
-             </div>
-
-             <div className="px-3 md:hidden ">
-             <img src={mobAi} />
-             </div>
+                   {/* SERVICES ENDS */}
 
             {/* ABOUT START */}
             <div className="xl:px-20 px-5 md:px-3">
@@ -65,8 +88,6 @@ const Homepage:React.FC = () => {
                     </div>
                 </div>
            
-
-
             <div className="md:flex md:flex-row justify-between pt-16 gap-10">
                 <div className="">
                 <img src={lucky_image} className="sm:w-full  md:max-w-[640px] sm:max-w-[800px] h-auto md:h-[600px] object-cover" />
