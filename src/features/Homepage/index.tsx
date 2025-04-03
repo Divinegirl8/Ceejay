@@ -14,14 +14,14 @@ import ServicesIntro from "../../components/ServicesIntro";
 const Homepage:React.FC = () => {
    
     return(
-        <div className="md:pt-[12rem] pt-[8rem]">
+        <div className="md:pt-[12rem] pt-[8rem] ">
 
            <HeroPage/>
 
            <ServicesIntro/>
 
             {/* ABOUT START */}
-            <div className="xl:px-20 px-5 md:px-3">
+            <div className="xl:px-20 px-5 md:px-3 ">
                 <div className="text-white md:pt-40 pt-20 border-b-[0.25px] border-[#62646C] pb-5">
                     <p className="text-[#797C86] xl:text-[16px] text-[14px] font-[600]">ABOUT</p>
                     <div className="md:flex md:flex-row justify-between">
@@ -35,14 +35,14 @@ const Homepage:React.FC = () => {
                     </div>
                 </div>
            
-            <div className="md:flex md:flex-row justify-between pt-16 gap-10">
+            <div className="md:flex md:flex-row justify-between pt-16 gap-10 ">
                 <div className="">
                 <img src={lucky_image} className="sm:w-full  md:max-w-[640px] sm:max-w-[800px] h-auto md:h-[600px] object-cover" />
                 </div>
 
-                <div className="border-[0.25px] border-[#62646C] rounded-[20px] w-full md:max-w-[630px] sm:max-w-[800px] sm:min-w-[50%] xl:h-[540px] md:h-auto sm:h-[510px]  pt-7 text-white xl:mt-6 md:mt-0 mt-6 ">
+                <div className="border-[0.25px] border-[#62646C] rounded-[20px] w-full md:max-w-[630px] sm:max-w-[800px] sm:min-w-[50%] xl:h-[540px] md:h-auto sm:h-[510px] py-7 text-white xl:mt-6 md:mt-0 mt-6  ">
 
-                        <div className="flex flex-row gap-2 xl:px-5 px-2">
+                        <div className="flex flex-row gap-2 xl:px-5 px-2 ">
                              <div>
                                 <img src={star} className=" sm:w-9 w-6"/>
                              </div>
@@ -57,7 +57,7 @@ const Homepage:React.FC = () => {
                             <p className="xl:px-5 px-2 pb-10">Hi, I’m Lucky. I specialize in combining advanced prompt engineering with AI artistry to create immersive, futuristic visuals. Each piece I craft emerges from sophisticated machine learning models, refined by my creative direction and honed through precise prompt engineering, to produce a truly unique digital composition. If you’re seeking art that defies conventions and sparks conversation, you’re in the right place.</p>
                         </div>
 
-                        <div className="flex flex-row gap-2 pt-6 xl:px-5 px-2">
+                        <div className="flex flex-row gap-2 pt-6 xl:px-5 px-2 ">
                              <div>
                                 <img src={star} className="sm:w-9 w-6"/>
                              </div>
@@ -81,16 +81,16 @@ const Homepage:React.FC = () => {
 
                         </div> 
 
-                        <div className="xl:flex sm:flex-row sm:flex xl:flex-row  md:flex-none justify-between xl:px-6 px-2 pt-7">
-                                <div className="flex flex-row gap-3 border-[0.25px] border-[#62646C] rounded-[20px] p-1 xl:w-[9rem] md:w-[9rem] w-[9.6rem]">
+                        <div className="xl:flex sm:flex-row sm:flex xl:flex-row md:flex-none justify-between xl:px-6 px-2 pt-7 ">
+                                <div className="flex flex-row gap-3 border-[0.25px] border-[#62646C] rounded-[20px] p-1 xl:w-[9rem] md:w-[9rem] w-[9.6rem] ">
                                     <img src={facebook} className="md:w-9 md:h-9 xl:x-10 xl:h-10 w-10 h-10 cursor-pointer"/>
                                     <img src={twitter}  className="md:w-9 md:h-9 xl:x-10 xl:h-10 w-10 h-10 cursor-pointer"/>
                                     <img src={linkedin} className="md:w-9 md:h-9 xl:x-10 xl:h-10 w-10 h-10 cursor-pointer"/>
                                 </div>
 
-                                <div className="sm:flex sm:flex-row justify-between gap-5 hidden md:hidden xl:flex xl:flex-row">
+                                <div className="sm:flex sm:flex-row justify-between gap-5 hidden md:hidden xl:flex xl:flex-row ">
 
-                                <Link to={"/"}>
+                                <Link to={"/"} >
                                    <FilledButton text="Let’s Work" bgColor="#2F2F37" wdt="174px" color="white" />
                                 </Link>
 

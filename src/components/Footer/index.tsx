@@ -48,9 +48,10 @@ const Footer:React.FC = () =>{
             <div className="flex flex-col gap-4">
             <h4 className="text-[#797C86]">Home</h4>
             <div className="text-[#F2F2F3] flex flex-col gap-2">
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">About Me</h4>
-                <h4 className="border-b border-[#62646C] w-[6rem] pb-1">My Works</h4>
-                <h4 className="border-b border-[#62646C] w-[7rem] pb-1">Testimonials</h4>
+                <h4 className="border-b border-[#62646C] w-[90px] pb-1">About Me</h4>
+                <h4 className="border-b border-[#62646C] w-[96px] pb-1">My Works</h4>
+                <h4 className="border-b border-[#62646C] w-[112px] pb-1">Testimonials</h4>
+
             </div>
             </div>
 
@@ -58,10 +59,10 @@ const Footer:React.FC = () =>{
             <div className="flex flex-col gap-4">
             <h4 className="text-[#797C86]">Clients</h4>
             <div className="text-[#F2F2F3] flex flex-col gap-2">
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Klovesto</h4>
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Nukeway</h4>
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Cloven’s</h4>
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">MenVol</h4>
+                <h4 className="border-b border-[#62646C] w-[90px] pb-1">Klovesto</h4>
+                <h4 className="border-b border-[#62646C] w-[85px] pb-1">Nukeway</h4>
+                <h4 className="border-b border-[#62646C] w-[80px] pb-1">Cloven’s</h4>
+                <h4 className="border-b border-[#62646C] w-[80px] pb-1">MenVol</h4>
             </div>
             </div>
 
@@ -69,11 +70,11 @@ const Footer:React.FC = () =>{
             <div className="flex flex-col gap-4">
             <h4 className="text-[#797C86]">Portfolio</h4>
             <div className="text-[#F2F2F3] flex flex-col gap-2">
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Events</h4>
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Portrait</h4>
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Branding</h4>
-                <h4 className="border-b border-[#62646C] w-[7rem] pb-1">Commerciale</h4>
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Wedding</h4>
+                <h4 className="border-b border-[#62646C] w-[80px] pb-1">Events</h4>
+                <h4 className="border-b border-[#62646C] w-[80px] pb-1">Portrait</h4>
+                <h4 className="border-b border-[#62646C] w-[83px] pb-1">Branding</h4>
+                <h4 className="border-b border-[#62646C] w-[115px] pb-1">Commerciale</h4>
+                <h4 className="border-b border-[#62646C] w-[80px] pb-1">Wedding</h4>
             </div>
             </div>
 
@@ -81,9 +82,9 @@ const Footer:React.FC = () =>{
             <div className="flex flex-col gap-4">
             <h4 className="text-[#797C86]">Services</h4>
             <div className="text-[#F2F2F3] flex flex-col gap-2">
-                <h4 className="border-b border-[#62646C] w-[5rem] pb-1">Portraits</h4>
-                <h4 className="border-b border-[#62646C] w-[4rem] pb-1">Events</h4>
-                <h4 className="border-b border-[#62646C] w-[7rem] pb-1">Commercial</h4>
+                <h4 className="border-b border-[#62646C] w-[85px] pb-1">Portraits</h4>
+                <h4 className="border-b border-[#62646C] w-[70px] pb-1">Events</h4>
+                <h4 className="border-b border-[#62646C] w-[100px] pb-1">Commercial</h4>
             </div>
             </div>
 
