@@ -124,7 +124,7 @@ const Testimonial: React.FC = () => {
                 </div>
 
                 {/* Logo grid */}
-                <div className="flex flex-col gap-10 py-20 mt-10">
+                <div className="flex flex-col gap-10 py-20 mt-10 justify-center items-center">
                     <div className="flex flex-row gap-[69px]">
                         <img src={conservaIcon} alt="conversa"/>
                         <img src={conservaIcon} alt="conversa"/>
