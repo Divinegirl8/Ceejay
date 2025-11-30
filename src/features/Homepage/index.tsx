@@ -9,6 +9,7 @@ import HeroPage from "../../components/HeroPage";
 import ServicesIntro from "../../components/ServicesIntro";
 import logo from "../../assets/homepage/logo.png"
 import moblogo from "../../assets/homepage/mobLogo.png"
+import Faq from "../../components/Faq"
 
 
 
@@ -136,6 +137,8 @@ const Homepage:React.FC = () => {
         </div>
 
          {/* ABOUT ENDS */}
+
+        <Faq/>
 
          <div className=" mt-14 flex justify-end flex-row sm:px-22 px-5">
 
