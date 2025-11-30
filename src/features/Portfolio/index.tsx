@@ -20,7 +20,7 @@ const Portfolio:React.FC = () =>{
 
             <div className="mt-16">
             <ProjectCard
-                title="Cliq Mit"
+                title="CliqMit"
                 description="Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
                 imageSrc="src/assets/new-portfolio/portfolio/cliqmit.png"
