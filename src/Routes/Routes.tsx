@@ -22,15 +22,17 @@
 
 
 import Home from "../features/Home"
+import KoboCaseStudy from "../features/Kobo"
 import Layout from "../Layout"
 
 export const Routes = [
-    {
+    { 
+    
         element : <Layout/>,
         children : [ 
             {
-            //  path : "/",
-            //  element : <Home/>
+             path : "case-study/kobo",
+             element : <KoboCaseStudy/>
             }
         ]},
         {

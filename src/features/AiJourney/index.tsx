@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import hoverArrow from "../../assets/new-portfolio/aijourney/Arrow (4).svg"
 import arrow from "../../assets/new-portfolio/aijourney/Arrow 1 (2).svg";
 import warrow from "../../assets/new-portfolio/aijourney/whitearr.svg";
 import line from "../../assets/new-portfolio/aijourney/Line.svg";
@@ -29,14 +28,14 @@ const AiJourney = () => {
       id: 3,
       title: "AI-Powered Motion Graphics",
       description: "Developed animated sequences using Runway ML and Midjourney for brand storytelling, combining design, movement, and AI-driven visuals for dynamic media experiences.",
-      maxW: "max-w-[440px]",
+      maxW: "max-w-[460px]",
       image: "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=400&h=300&fit=crop"
     },
     {
       id: 4,
       title: "Conversational Intelligence",
       description: "Founded Conversa, an early-stage AI startup that allows businesses to make and receive calls autonomously using natural, human-like voice automation.",
-      maxW: "max-w-[450px]",
+      maxW: "max-w-[500px]",
       image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=400&h=300&fit=crop"
     },
     {
@@ -81,9 +80,62 @@ const AiJourney = () => {
     });
   };
 
+  // const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  //   const rect = e.currentTarget.getBoundingClientRect();
+  //   const arrowButton = e.currentTarget.querySelector('.arrow-button');
+  //   const itemId = Number(e.currentTarget.getAttribute('data-item-id'));
+    
+  //   // Calculate where the image should start (top position) - overlapping upper content
+  //   let imageTop = rect.top;
+  //   let calculatedHeight = rect.height;
+    
+  //   if (itemId === 1) {
+  //     // For first item, overlap with the heading
+  //     const heading = document.querySelector('#ai h3');
+  //     if (heading) {
+  //       const headingRect = heading.getBoundingClientRect();
+  //       // Start from middle of the heading to create overlap
+  //       imageTop = headingRect.top + (headingRect.height / 2);
+  //       calculatedHeight = rect.bottom - imageTop;
+  //       setRowHeight(calculatedHeight);
+  //     }
+  //   } else {
+    //   // For other items, overlap with previous row
+    //   const allRows = document.querySelectorAll('[data-item-id]');
+    //   const currentIndex = Array.from(allRows).findIndex(
+    //     row => Number(row.getAttribute('data-item-id')) === itemId
+    //   );
+      
+    //   if (currentIndex > 0) {
+    //     const prevRow = allRows[currentIndex - 1];
+    //     const prevRect = prevRow.getBoundingClientRect();
+     
+    //     imageTop = prevRect.top + (prevRect.height / 2);
+    //     calculatedHeight = rect.bottom - imageTop;
+    //     setRowHeight(calculatedHeight);
+    //   } else {
+    //     setRowHeight(rect.height);
+    //   }
+    // }  if (arrowButton) {
+    //   const arrowRect = arrowButton.getBoundingClientRect();
+      
+    //   if (e.clientX >= arrowRect.left - 20) {
+    //     setShowImage(false);
+    //   } else {
+    //     setShowImage(true);
+    //   }
+    // }
+    
+  //   setMousePos({
+  //     x: e.clientX,
+  //     y: imageTop
+  //   });
+  // }; 
+
   return (
-    <div id="ai" className="py-16 scroll-mt-[88px] bg-[#050A10] relative">
-      <h3 className="text-[#FEFEFE] text-[70px] border-b border-[#424144] py-8 px-20">AI Journey</h3>
+    <div id="ai" className="py-20 scroll-mt-[88px] bg-[#050A10] relative">
+      
+      <h3 className="text-[#FEFEFE] text-[70px] border-b border-[#424144] pb-10  px-20">AI Journey</h3>
 
       <div className="mt-10">
         {journeyItems.map((item) => (
@@ -91,7 +143,7 @@ const AiJourney = () => {
             {item.id !== 1 && <div className="border-t border-[#424144]"></div>}
             <div
               data-item-id={item.id}
-              className={`flex flex-row justify-between py-10 px-20 relative transition-colors duration-300 z-10 ${
+              className={`flex flex-row justify-between items-center  px-20 relative transition-colors duration-300 z-10 min-h-[170px] ${
                 hoveredItem === item.id ? 'bg-[#15181C] cursor-none' : ''
               }`}
               onMouseEnter={() => {
@@ -117,25 +169,25 @@ const AiJourney = () => {
                   />
               </div>
 
-              <span className={`text-[#A6A6A6] ${item.maxW} text-[20px] relative z-20 ml-8 ${
+              <span className={`text-[#A6A6A6] ${item.maxW} text-[16px] relative z-20 ml-8 ${
                   hoveredItem === item.id ? 'text-[#FEFEFE]' : 'text-[#A6A6A6]'
                 }`}>
                 {item.description}
               </span>
 
               <div 
-  className={`arrow-button flex items-center justify-center w-20 h-20 rounded-full cursor-pointer relative z-20 transition-all duration-300 ${
-    hoveredItem === item.id ? 'bg-[#238EFF]' : 'bg-transparent'
-  }`} 
->
-  <img 
-    src={hoveredItem === item.id ? warrow : arrow} 
-    alt="arrow"
-    className={`transition-transform duration-300 ${
-      hoveredItem === item.id ? '-rotate-40' : '' 
-    }`}
-  />
-</div>
+                className={`arrow-button flex items-center justify-center w-20 h-20 rounded-full cursor-pointer relative z-20 transition-all duration-300 ${
+                  hoveredItem === item.id ? 'bg-[#238EFF]' : 'bg-transparent'
+                }`} 
+              >
+                <img 
+                  src={hoveredItem === item.id ? warrow : arrow} 
+                  alt="arrow"
+                  className={`transition-transform duration-300 ${
+                    hoveredItem === item.id ? '-rotate-40' : '' 
+                  }`}
+                />
+              </div>
 
               {hoveredItem === item.id && showImage && rowHeight > 0 && (
                 <div
@@ -150,7 +202,7 @@ const AiJourney = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-[120px] h-full object-cover rounded-lg shadow-2xl"
+                    className="w-[160px] h-full object-cover rounded-lg shadow-2xl"
                   />
                 </div>
               )}

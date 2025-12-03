@@ -21,7 +21,7 @@ const Portfolio:React.FC = () =>{
             <div className="mt-16">
             <ProjectCard
                 title="CliqMit"
-                description="Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada."
+                description="Building an event discovery platform that turns user frustration into business opportunity. Cluttered interfaces and complex booking flows were causing abandonment and revenue loss. I designed CliqMit from scratch, focusing on simplicity and conversion to reduce friction, increase completion rates, and establish competitive market positioning."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
                 imageSrc="src/assets/new-portfolio/portfolio/cliqmit.png"
                 imageAlt="Cliq Mit app"
@@ -30,7 +30,7 @@ const Portfolio:React.FC = () =>{
 
                 <ProjectCard
                 title="Kobo Connect"
-                description="Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada."
+                description="I designed Kobo Vault as a financial technology combining instant virtual cards, real-time monitoring, seamless transfers, and smart budgeting in a secure, intuitive interface. The solution reduces cognitive load, builds trust through transparency, and positions Kobo Vault to capture underserved market segments seeking both simplicity and robust financial control."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
                 imageSrc="src/assets/new-portfolio/portfolio/ks.png"
                 imageAlt="Kobo Connect app"
@@ -38,7 +38,7 @@ const Portfolio:React.FC = () =>{
                 />
                <ProjectCard
                 title="Bosscab Ride"
-                description="Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada."
+                description="A strategic redesign addressing user pain points and business growth. Through research uncovering affordability barriers, payment friction, and navigation issues, I designed group wallets, seamless transactions, and precise routing—solutions that reduce costs, improve retention, and drive sustainable growth."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
                 imageSrc="src/assets/new-portfolio/portfolio/bc.png"
                 imageAlt="Bosscab Ride app"
