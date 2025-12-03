@@ -5,9 +5,9 @@ const FirstSection: React.FC = () => {
         <>
             <div className="border-t border-[#5A5A5A] flex flex-row">
               
-                <div className="w-1/2 border-r border-[#5A5A5A] flex flex-col">
+                <div className="w-1/2  border-r border-[#5A5A5A] flex flex-col">
                    
-                <div className="px-16 py-16 border-b border-[#5A5A5A] relative">
+                <div className="border-b px-20  py-10 border-[#5A5A5A] relative">
                         <h1 className="text-[#000000] text-[50px] font-normal leading-tight mb-8">
                             <span className="block">Packaging</span>
                             <span className="block">Design for ABC</span>
@@ -40,14 +40,14 @@ const FirstSection: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="w-1/2 ">
-    <div className="flex flex-row justify-evenly items-stretch gap-8 px-14 py-16">
-        <div className="">
-            <img 
-                src={koboPicture} 
-                alt="Kobo App Interface"
-            />
-        </div>
+                <div className="w-1/2 my-auto py-10">
+            <div className="flex flex-row justify-evenly items-stretch gap-8 px-14  ">
+                <div className="">
+                    <img 
+                        src={koboPicture} 
+                        alt="Kobo App Interface"
+                    />
+                </div>
 
         <div className="flex flex-col justify-between">
             <div className="text-[#000000] text-sm tracking-wider z-10"
@@ -67,6 +67,9 @@ const FirstSection: React.FC = () => {
         </div>
     </div>
 </div>
+
+
+
             </div>
         </>
     );

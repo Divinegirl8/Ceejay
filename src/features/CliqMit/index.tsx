@@ -1,4 +1,10 @@
+import FifthSection from "./FifthSection"
 import FirstSection from "./FirstSection"
+import FourthSection from "./FourthSection"
+import SecondSection from "./SecondSection"
+import SeventhSection from "./SeventhSection"
+import SixthSection from "./SixthSection"
+import ThirdSection from "./ThirdSection"
 
 const CliqMitCaseStudy : React.FC = () => {
     return(
@@ -14,6 +20,12 @@ const CliqMitCaseStudy : React.FC = () => {
           </div>
 
           <FirstSection/>
+          <SecondSection/>
+          <ThirdSection/>
+          <FourthSection/>
+          <FifthSection/>
+          <SixthSection/>
+          <SeventhSection/>
         
         </>
     )

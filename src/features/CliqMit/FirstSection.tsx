@@ -6,7 +6,7 @@ import manPicture from "../../assets/new-portfolio/cliqmit/first-section/2 (2).p
 const FirstSection: React.FC = () => {
     return (
         <>
-            <div className="border-t border-[#5A5A5A] flex flex-row">
+            <div className="border-t border-b border-[#5A5A5A] flex flex-row">
               
                 <div className="w-1/2 border-r border-[#5A5A5A] flex flex-col">
                    
@@ -39,7 +39,7 @@ const FirstSection: React.FC = () => {
                     </div>
                 </div>
 
-             <div className="w-1/2 relative flex items-center justify-center py-12">
+             <div className="w-1/2 relative flex items-stretch justify-center py-12">
                 
                 <div className="relative w-full h-full">
                   
