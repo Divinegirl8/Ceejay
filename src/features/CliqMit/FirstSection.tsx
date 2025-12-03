@@ -64,7 +64,7 @@ const FirstSection: React.FC = () => {
                     <div className="px-16 mt-5">
                         <img 
                             src={manPicture} 
-                            alt="Kobo App Interface"
+                            alt="man"
                             className=""
                         />
                     </div>
@@ -72,7 +72,7 @@ const FirstSection: React.FC = () => {
                     <div className="">
                         <img 
                             src={macPicture} 
-                            alt="Kobo App Interface"
+                            alt="picture"
                             className=""
                         />
                     </div>
