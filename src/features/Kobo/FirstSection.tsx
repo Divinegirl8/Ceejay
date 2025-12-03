@@ -24,7 +24,7 @@ const FirstSection: React.FC = () => {
 
                     
                     <div className="px-16 py-16 flex-1">
-                        <h2 className="text-[#000000] text-[32px] font-normal mb-6">
+                        <h2 className="text-[#000000] text-[32px] text-center font-normal mb-6">
                             Project Brief
                         </h2>
                         
@@ -40,37 +40,33 @@ const FirstSection: React.FC = () => {
                     </div>
                 </div>
 
-             <div className="w-1/2 relative flex items-center justify-center p-10">
-                
-                <div className="relative w-full h-full">
-                  
-                    <div className="absolute top-0 -right-6 text-[#000000] text-sm tracking-wider z-10"
-                        style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', padding: '2rem 1rem' }}>
-                        Date <span className="font-[600]">01.01.2025</span>
-                    </div>
-                    
-                
-                    <div className="absolute top-1/2 -right-6 -translate-y-1/2 text-[#000000] text-base font-medium tracking-wide z-10"
-                        style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', padding: '2rem 1rem' }}>
-                        Portfolio Design
-                    </div>
-                    
-                    <div className="absolute bottom-0 -right-6 text-[#000000] text-sm tracking-wider z-10"
-                        style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', padding: '2rem 1rem' }}>
-                        03
-                    </div>
-                   
+                <div className="w-1/2 ">
+    <div className="flex flex-row justify-evenly items-stretch gap-8 px-14 py-16">
+        <div className="">
+            <img 
+                src={koboPicture} 
+                alt="Kobo App Interface"
+            />
+        </div>
 
-                
-                    <div className="w-full h-full flex items-center justify-center px-10  ">
-                        <img 
-                            src={koboPicture} 
-                            alt="Kobo App Interface"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-                </div>
-                </div>
+        <div className="flex flex-col justify-between">
+            <div className="text-[#000000] text-sm tracking-wider z-10"
+                style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)'}}>
+                Date <span className="font-[600]">01.01.2025</span>
+            </div>
+            
+            <div className="text-[#000000] text-base font-medium tracking-wide z-10"
+                style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)'}}>
+                Portfolio Design
+            </div>
+            
+            <div className="text-[#000000] text-sm tracking-wider z-10 font-medium"
+                style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)'}}>
+                03
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </>
     );

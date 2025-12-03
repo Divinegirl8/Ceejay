@@ -21,6 +21,7 @@
 
 
 
+import CliqMitCaseStudy from "../features/CliqMit"
 import Home from "../features/Home"
 import KoboCaseStudy from "../features/Kobo"
 import Layout from "../Layout"
@@ -33,7 +34,11 @@ export const Routes = [
             {
              path : "case-study/kobo",
              element : <KoboCaseStudy/>
-            }
+            },
+            {
+                path : "case-study/cliqmit",
+                element : <CliqMitCaseStudy/>
+               }
         ]},
         {
             path : "/",
