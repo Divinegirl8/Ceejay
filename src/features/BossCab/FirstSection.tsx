@@ -1,4 +1,4 @@
-import roadPicture from "../../assets/new-portfolio/boss-cab/first-section/Mask group (6).png";
+import roadPicture from "../../assets/new-portfolio/boss-cab/first-section/roadgi.gif";
 import maskPicture from "../../assets/new-portfolio/boss-cab/first-section/Group (4).png";
 
 const FirstSection: React.FC = () => {
@@ -18,7 +18,7 @@ const FirstSection: React.FC = () => {
            <img 
                src={roadPicture} 
                alt="City skyline illustration"
-               className="h-[200px] w-auto object-contain"
+               className="h-[200px] object-contain"
            />
        </div>
 

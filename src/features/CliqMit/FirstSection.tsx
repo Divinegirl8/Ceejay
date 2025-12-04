@@ -56,7 +56,7 @@ const FirstSection: React.FC = () => {
                     
                     <div className="absolute bottom-0 right-0 font-medium text-[#000000] text-sm tracking-wider z-10"
                         style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', padding: '2rem 1rem' }}>
-                        02
+                        01
                     </div>
                    
 
