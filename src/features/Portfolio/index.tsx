@@ -1,4 +1,8 @@
 import ProjectCard from "../../component/ProjectCard";
+import cliq from "../../assets/new-portfolio/portfolio/cliqmit.png";
+import kobo from "../../assets/new-portfolio/portfolio/ks.png";
+import synventory from "../../assets/new-portfolio/portfolio/bosscab.png"
+import bosscab from "../../assets/new-portfolio/portfolio/bc.png";
 
 const Portfolio:React.FC = () =>{
 
@@ -23,7 +27,7 @@ const Portfolio:React.FC = () =>{
                 title="CliqMit"
                 description="Building an event discovery platform that turns user frustration into business opportunity. Cluttered interfaces and complex booking flows were causing abandonment and revenue loss. I designed CliqMit from scratch, focusing on simplicity and conversion to reduce friction, increase completion rates, and establish competitive market positioning."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
-                imageSrc="src/assets/new-portfolio/portfolio/cliqmit.png"
+                imageSrc={cliq}
                 imageAlt="Cliq Mit app"
                 imageOnLeft={true}
                 />
@@ -32,7 +36,7 @@ const Portfolio:React.FC = () =>{
                 title="Kobo Connect"
                 description="I designed Kobo Vault as a financial technology combining instant virtual cards, real-time monitoring, seamless transfers, and smart budgeting in a secure, intuitive interface. The solution reduces cognitive load, builds trust through transparency, and positions Kobo Vault to capture underserved market segments seeking both simplicity and robust financial control."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
-                imageSrc="src/assets/new-portfolio/portfolio/ks.png"
+                imageSrc={kobo}
                 imageAlt="Kobo Connect app"
                 imageOnLeft={false}
                 />
@@ -40,7 +44,7 @@ const Portfolio:React.FC = () =>{
                 title="Bosscab Ride"
                 description="A strategic redesign addressing user pain points and business growth. Through research uncovering affordability barriers, payment friction, and navigation issues, I designed group wallets, seamless transactions, and precise routing—solutions that reduce costs, improve retention, and drive sustainable growth."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
-                imageSrc="src/assets/new-portfolio/portfolio/bc.png"
+                imageSrc={bosscab}
                 imageAlt="Bosscab Ride app"
                 imageOnLeft={true}
                 />
@@ -49,7 +53,7 @@ const Portfolio:React.FC = () =>{
                 title="Synventory"
                 description="Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
-                imageSrc="src/assets/new-portfolio/portfolio/bosscab.png"
+                imageSrc={synventory}
                 imageAlt="Synventory app"
                 imageOnLeft={false}
                 />
