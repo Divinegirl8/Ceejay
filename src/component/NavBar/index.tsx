@@ -23,6 +23,7 @@ const NavBar: React.FC = () => {
         } else {
             navigate(`/#${sectionId}`);
         }
+        setIsMenuOpen(false);
     };
 
     useEffect(() => {
@@ -39,13 +40,14 @@ const NavBar: React.FC = () => {
 
     return (
         <>
-
-            <div className="flex flex-row bg-white w-full px-20 py-6 justify-between items-center relative z-50" id="nav">
+            {/* Main Navigation Bar */}
+            <div className="flex flex-row bg-white w-full px-20 py-6 justify-between items-center relative z-50 max-md:px-6 max-md:py-4" id="nav">
                 <div>
-                    <img src={logo} width={70} alt="Logo"/>
+                    <img src={logo} width={70} alt="Logo" className="max-md:w-[60px]"/>
                 </div>
 
-                <div className="flex gap-10 text-[#1F1F1F] text-[18px]">
+                {/* Desktop Menu Links */}
+                <div className="flex gap-10 text-[#1F1F1F] text-[18px] max-md:hidden">
                     <span className="cursor-pointer" onClick={() => handleNavigation('home')}>
                         HOME
                     </span>
@@ -63,65 +65,75 @@ const NavBar: React.FC = () => {
                     </span>
                 </div>
 
+                {/* Hamburger Menu Icon */}
                 <div>
                     <div 
                         className="flex flex-col space-y-[7px] cursor-pointer" 
                         onClick={() => setIsMenuOpen(true)}
                     >
-                        <div className="w-9 h-[2.5px] bg-black rounded-xl"></div>
-                        <div className="w-8 h-[2.5px] bg-black rounded-xl ml-auto"></div>
-                        <div className="w-6 h-[2.5px] bg-black rounded-xl ml-auto"></div>
+                        <div className="w-9 h-[2.5px] bg-black rounded-xl max-md:w-7"></div>
+                        <div className="w-8 h-[2.5px] bg-black rounded-xl ml-auto max-md:w-6"></div>
+                        <div className="w-6 h-[2.5px] bg-black rounded-xl ml-auto max-md:w-5"></div>
                     </div>
                 </div>
             </div>
 
-           
+            {/* Mobile/Desktop Menu Overlay */}
             {isMenuOpen && (
                 <>
-                    <div className="fixed top-0 left-0 right-0 flex flex-row bg-[#F5F5F5] w-full px-20 py-6 justify-center items-center z-50">
-                        <div>
-                            <img src={logo} width={70} alt="Logo"/>
-                        </div>
-                        
+                    {/* Menu Header */}
+                    <div className="fixed top-0 left-0 right-0 flex flex-row bg-[#F5F5F5] w-full px-20 py-6 justify-center items-center z-50 max-md:px-6 max-md:py-4">
+                                <div className={`${isMenuOpen ? 'max-md:invisible' : ''}`}>
+                               <img src={logo} width={70} alt="Logo" className="max-md:w-[60px]"/>
+                              </div>
+                                    
+                        {/* Close Button */}
                         <div 
-                            className="absolute right-20 cursor-pointer text-4xl font-light"
+                            className="absolute right-20 cursor-pointer text-4xl font-light max-md:right-6"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                             <div className="w-9 h-[2.5px] bg-black rounded-xl"></div>
+                             <div className="w-9 h-[2.5px] bg-black rounded-xl max-md:w-7"></div>
                         </div>
                     </div>
 
-            
-                    <div className="fixed top-[89px] left-0 right-0 gap-5 bg-[#F5F5F5] w-full z-50 px-20 py-12 flex flex-row justify-evenly items-center">
-                        <div className="">
-                            <div className="flex flex-col gap-6 text-[#000000] text-[25px] mb-20 font-medium">
+                    {/* Menu Content */}
+                    <div className="fixed top-[89px] left-0 right-0 gap-5 bg-[#F5F5F5] w-full z-50 px-20 py-12 flex flex-row justify-evenly items-center max-md:top-[68px] max-md:flex-col max-md:px-6 max-md:py-4 max-md:justify-start max-md:items-start max-md:h-[calc(100vh-68px)] max-md:overflow-y-auto">
+                        <div className="max-md:w-full">
+                            {/* Menu Links - Desktop shows 3 items, Mobile shows all 8 */}
+                            <div className="flex flex-col gap-6 text-[#000000] text-[25px] mb-20 font-medium  max-md:text-[20px] max-md:mb-8">
+                                <span className="cursor-pointer hover:opacity-70 md:hidden" onClick={() => handleNavigation('home')}>Home</span>
+                                <span className="cursor-pointer hover:opacity-70 md:hidden" onClick={() => handleNavigation('portfolio')}>Portfolio</span>
+                                <span className="cursor-pointer hover:opacity-70 md:hidden" onClick={() => handleNavigation('ai')}>AI journey</span>
+                                <span className="cursor-pointer hover:opacity-70 md:hidden" onClick={() => handleNavigation('teaching')}>Teaching & mentorship</span>
+                                <span className="cursor-pointer hover:opacity-70 md:hidden" onClick={() => handleNavigation('contact')}>Contact me</span>
                                 <span className="cursor-pointer hover:opacity-70">About me</span>
                                 <span className="cursor-pointer hover:opacity-70">My resume</span>
                                 <span className="cursor-pointer hover:opacity-70">Publications</span>
                             </div>
                             
-                            <div className="pt-6 border-t border-gray-400">
-                                <div className="flex items-center justify-between gap-5">
-                                    <span className="text-[15px] text-[#1F1F1F]">luckyekezie@gmail.com</span>
+                            {/* Contact Information */}
+                            <div className="pt-6 border-t border-gray-400 max-md:pt-4">
+                                <div className="flex items-center justify-between gap-5 max-md:flex-col max-md:items-start max-md:gap-4">
+                                    <span className="text-[15px] text-[#1F1F1F] max-md:text-[13px]">luckyekezie@gmail.com</span>
                                     <div className="flex flex-row gap-2">
-                        <img src={linkedinIcon} alt="linkedin"/>
-                        <img src={xIcon} alt="x"/>
-                        <img src={facebookIcon} alt="facebook"/>
-                        <img src={instagramIcon} alt="instagram"/>
-                        <img src={mediumIcon} alt="medium"/>
-
-                    </div>
+                                        <img src={linkedinIcon} alt="linkedin" className="max-md:w-[35px] cursor-pointer"/>
+                                        <img src={xIcon} alt="x" className="max-md:w-[35px] cursor-pointer"/>
+                                        <img src={facebookIcon} alt="facebook" className="max-md:w-[35px] cursor-pointer"/>
+                                        <img src={instagramIcon} alt="instagram" className="max-md:w-[35px] cursor-pointer"/>
+                                        <img src={mediumIcon} alt="medium" className="max-md:w-[35px] cursor-pointer"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="flex flex-row">
+                        {/* Desktop Image Placeholders (Hidden on Mobile) */}
+                        <div className="flex flex-row max-md:hidden">
                             <div className="bg-[#AEAEAE] w-[320px] h-[350px]"></div>
                             <div className="bg-[#D7D7D7] w-[320px] h-[350px]"></div>
                         </div>
                     </div>
 
-                    
+                    {/* Backdrop Overlay */}
                     <div 
                         className="fixed inset-0 z-40"
                         style={{ backgroundColor: 'rgba(80, 80, 80, 0.45)' }}

@@ -9,7 +9,7 @@ const Portfolio:React.FC = () =>{
     return(
         <>
 
-        <div id="portfolio" className="py-3 pt-[5rem] scroll-mt-[90px] ">
+        <div id="portfolio" className="py-3 pt-[5rem] scroll-mt-[90px] max-md:scroll-mt-[10px] ">
 
 
 
