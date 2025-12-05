@@ -133,7 +133,7 @@ const AiJourney = () => {
   // }; 
 
   return (
-    <div id="ai" className="py-20 scroll-mt-[88px] max-md:scroll-mt-[10px] bg-[#050A10] relative">
+    <div id="ai" className="py-20 scroll-mt-[88px] max-md:scroll-mt-[10px] bg-[#050A10] relative max-md:hidden">
       
       <h3 className="text-[#FEFEFE] text-[70px] border-b border-[#424144] pb-10  px-20">AI Journey</h3>
 

@@ -97,7 +97,7 @@ const NavBar: React.FC = () => {
                     </div>
 
                     {/* Menu Content */}
-                    <div className="fixed top-[89px] left-0 right-0 gap-5 bg-[#F5F5F5] w-full z-50 px-20 py-12 flex flex-row justify-evenly items-center max-md:top-[68px] max-md:flex-col max-md:px-6 max-md:py-4 max-md:justify-start max-md:items-start max-md:h-[calc(100vh-68px)] max-md:overflow-y-auto">
+                    <div className="fixed top-[89px] left-0 right-0 gap-5 bg-[#F5F5F5] w-full z-50 px-20 py-12 flex flex-row justify-evenly items-center max-md:top-[67px] max-md:flex-col max-md:px-6 max-md:py-4 max-md:justify-start max-md:items-start max-md:h-[calc(100vh-68px)] max-md:overflow-y-auto">
                         <div className="max-md:w-full">
                             {/* Menu Links - Desktop shows 3 items, Mobile shows all 8 */}
                             <div className="flex flex-col gap-6 text-[#000000] text-[25px] mb-20 font-medium  max-md:text-[20px] max-md:mb-8">

@@ -10,7 +10,7 @@ const Footer:React.FC = () =>{
     return(
         <>
 
-        <div className="px-20 py-10 bg-white">
+        <div className="px-20 py-10 bg-white max-md:hidden">
 
             <div className="flex flex-col leading-tight"> 
                 <span className="text-[#000000] font-[600] text-[60px]">Let’s create</span>

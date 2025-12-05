@@ -47,7 +47,7 @@ const Testimonial: React.FC = () => {
 
     return (
         <>
-            <div className="px-20 py-10">
+            <div className="px-20 py-10 max-md:hidden">
                 <span className="text-[#626262] text-[18px] font-medium">CLIENT TESTIMONIALS</span>
 
                 <div className="mt-10">
