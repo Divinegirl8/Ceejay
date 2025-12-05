@@ -4,7 +4,7 @@ const Teaching : React.FC = () => {
     return(
         <>
 
-        <div className="px-20 max-md:px-7  scroll-mt-[88px] md:py-16 max-sm:pt-10 max-md:scroll-mt-[60px]" id="teaching">
+        <div className="px-20 max-md:px-7  scroll-mt-[88px] md:py-16 py-16  max-md:scroll-mt-[60px]" id="teaching">
 
         <div className="flex flex-col">
                     <span className="text-[#626262] text-[18px] font-medium">TEACHING & MENTORSHIP</span>

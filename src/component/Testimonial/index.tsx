@@ -81,7 +81,7 @@ const Testimonial: React.FC = () => {
                 <div className="mt-10 max-md:mt-6">
                   
                     <div 
-                         className="relative w-full h-[400px] max-md:h-[410px] overflow-hidden"
+                         className="relative w-full h-[400px] max-md:h-[450px] overflow-hidden"
                          
                         onTouchStart={onTouchStart}
                         onTouchMove={onTouchMove}
