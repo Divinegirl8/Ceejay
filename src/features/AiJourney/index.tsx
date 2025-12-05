@@ -133,17 +133,17 @@ const AiJourney = () => {
   // }; 
 
   return (
-    <div id="ai" className="py-20 scroll-mt-[88px] max-md:scroll-mt-[10px] bg-[#050A10] relative max-md:hidden">
+    <div id="ai" className="md:py-20 py-10 scroll-mt-[88px] max-md:scroll-mt-[60px] bg-[#050A10] relative ">
       
-      <h3 className="text-[#FEFEFE] text-[70px] border-b border-[#424144] pb-10  px-20">AI Journey</h3>
+      <h3 className="text-[#FEFEFE] md:text-[70px] text-[50px] border-b border-[#424144] pb-10 max-md:px-7 px-20">AI Journey</h3>
 
-      <div className="mt-10">
+      <div className="md:mt-10 mt-8">
         {journeyItems.map((item) => (
           <div key={item.id}>
             {item.id !== 1 && <div className="border-t border-[#424144]"></div>}
             <div
               data-item-id={item.id}
-              className={`flex flex-row justify-between items-center  px-20 relative transition-colors duration-300 z-10 min-h-[170px] ${
+              className={`flex md:flex-row flex-col md:justify-between md:items-center px-7 max-sm:py-5 md:px-20 relative transition-colors duration-300 z-10 min-h-[170px] ${
                 hoveredItem === item.id ? 'bg-[#15181C] cursor-none' : ''
               }`}
               onMouseEnter={() => {
@@ -156,34 +156,35 @@ const AiJourney = () => {
               }}
               onMouseMove={handleMouseMove}
             >
-              <div className="flex flex-row gap-3 relative z-20">
-                <h3 className={`font-[500] text-[48px] whitespace-nowrap transition-colors duration-300 ${
+              <div className="flex md:flex-row flex-col gap-3 max-sm:py-2 relative z-20">
+                <h3 className={`font-[500] md:text-[48px] text-[25px] whitespace-nowrap transition-colors duration-300 ${
                   hoveredItem === item.id ? 'text-[#FEFEFE]' : 'text-[#A6A6A6]'
                 }`}>
                   {item.title}
                 </h3>
-                <span className="text-[#FEFEFE] font-normal">0{item.id}</span>
+                <span className="text-[#FEFEFE] font-normal md:block hidden">0{item.id}</span>
                 <img 
                     src={line} 
                     alt="arrow" 
+                    className='md:block hidden'
                   />
               </div>
 
-              <span className={`text-[#A6A6A6] ${item.maxW} text-[16px] relative z-20 ml-8 ${
+              <span className={`text-[#A6A6A6] ${item.maxW} text-[16px] relative z-20 md:ml-8 ${
                   hoveredItem === item.id ? 'text-[#FEFEFE]' : 'text-[#A6A6A6]'
                 }`}>
                 {item.description}
               </span>
 
               <div 
-                className={`arrow-button flex items-center justify-center w-20 h-20 rounded-full cursor-pointer relative z-20 transition-all duration-300 ${
+                className={`arrow-button md:flex items-center justify-center w-20 h-20 rounded-full cursor-pointer relative z-20 transition-all duration-300  hidden ${
                   hoveredItem === item.id ? 'bg-[#238EFF]' : 'bg-transparent'
                 }`} 
               >
                 <img 
                   src={hoveredItem === item.id ? warrow : arrow} 
                   alt="arrow"
-                  className={`transition-transform duration-300 ${
+                  className={`transition-transform duration-300 md:block hidden ${
                     hoveredItem === item.id ? '-rotate-40' : '' 
                   }`}
                 />
@@ -191,7 +192,7 @@ const AiJourney = () => {
 
               {hoveredItem === item.id && showImage && rowHeight > 0 && (
                 <div
-                  className="fixed pointer-events-none z-0"
+                  className="fixed pointer-events-none z-0 md:block hidden"
                   style={{
                     left: mousePos.x + 'px',
                     top: mousePos.y + 'px',

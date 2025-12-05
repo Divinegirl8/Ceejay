@@ -1,6 +1,6 @@
 const Form:React.FC = () =>{
     return(
-        <div id="contact" className="md:py-16 py-1 px-20 max-md:px-5  scroll-mt-[80px] max-md:scroll-mt-[10px] bg-[#050A10]">
+        <div id="contact" className="md:py-16 py-1 px-20 max-md:px-5  scroll-mt-[80px] max-md:scroll-mt-[60px] bg-[#050A10]">
         <div className=" items-center justify-center flex py-18 flex-col px-4">
 
             <div className="text-center max-w-4xl w-full">
