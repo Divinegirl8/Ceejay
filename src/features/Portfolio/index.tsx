@@ -9,20 +9,20 @@ const Portfolio:React.FC = () =>{
     return(
         <>
 
-        <div id="portfolio" className="py-3 pt-[5rem] scroll-mt-[90px] max-md:scroll-mt-[10px] ">
+        <div id="portfolio" className="py-3 pt-[5rem] max-md:pt-[4rem] scroll-mt-[90px] max-md:scroll-mt-[10px] ">
 
 
-
+        
             <div className="flex flex-col items-center justify-center">
                     <span className="text-[#626262] text-[18px] font-medium">PORTFOLIO</span>
-                    <h2 className="text-[#000000] text-[50px] text-center font-medium leading-tight mt-5">
-                    <span className="block">Innovation, Excellence, and</span>
-                    <span className="block">Success Combined</span>
+                    <h2 className="text-[#000000] text-[50px] max-md:text-[35px] text-center font-medium leading-tight mt-5">
+                    <span className="block">Strategic Designs for</span>
+                    <span className="block"> Real-World Impact</span>
                     </h2>
             </div>
 
 
-            <div className="mt-16">
+            <div className="max-md:mt-5 mt-16">
             <ProjectCard
                 title="CliqMit"
                 description="Building an event discovery platform that turns user frustration into business opportunity. Cluttered interfaces and complex booking flows were causing abandonment and revenue loss. I designed CliqMit from scratch, focusing on simplicity and conversion to reduce friction, increase completion rates, and establish competitive market positioning."

@@ -1,4 +1,5 @@
 import luckyPicture from "../../assets/new-portfolio/hero/lucky.png";
+import luckyMobPicture from "../../assets/new-portfolio/hero/Image (7).png";
 import arrowIcon from "../../assets/new-portfolio/navbar/Arrow.svg";
 import style from "./index.module.css"
 
@@ -19,21 +20,27 @@ const Hero : React.FC = () => {
                 <img 
                     src={luckyPicture} 
                     alt="Lucky Ekezie"
-                    className="w-full h-auto object-cover absolute top-0 left-0"
+                    className="w-full h-auto object-cover absolute top-0 left-0 hidden md:block"
+                />
+              
+                 <img 
+                    src={luckyMobPicture} 
+                    alt="Lucky Ekezie"
+                    className="w-full h-auto object-cover absolute top-0 left-0 md:hidden "
                 />
               
                 {/* Content overlay */}
-                <div className="flex flex-col gap-2 items-center justify-center h-full pt-[18rem] relative z-10">
-                    <h1 className="text-white text-[70px] font-semibold tracking-widest">
+                <div className="flex flex-col gap-2 items-center justify-center h-full pt-[18rem]  relative z-10">
+                    <h1 className="text-white md:text-[70px] text-[60px] font-semibold max-sm:px-10 max-sm:text-center md:tracking-widest leading-[4rem]">
                         LUCKY EKEZIE
                     </h1>
 
-                    <span className="text-[#DEDEDE] text-[25px] font-medium">AI-Driven Product Design Leader</span>
+                    <span className="text-[#DEDEDE] md:text-[25px] text-[20px] font-medium">AI-Driven Product Design Leader</span>
 
                     <div className={`flex flex-col items-center mt-14`}>
                         <div className={`${style.animateSlowBounce} cursor-pointer`} onClick={() => scrollToSection('nav')}><img src={arrowIcon} alt="Scroll down"/></div>
                     
-                        <span className="text-[#DEDEDE] text-[14px] mt-2">SCROLL DOWN</span>
+                        <span className="text-[#DEDEDE] text-[14px] mt-2">SCROLL UP</span>
                     </div>
                 </div>
             </div>

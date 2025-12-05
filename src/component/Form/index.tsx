@@ -1,11 +1,11 @@
 const Form:React.FC = () =>{
     return(
-        <div id="contact" className="py-16 px-20  scroll-mt-[80px] max-md:scroll-mt-[10px] bg-[#050A10]">
+        <div id="contact" className="md:py-16 py-1 px-20 max-md:px-5  scroll-mt-[80px] max-md:scroll-mt-[10px] bg-[#050A10]">
         <div className=" items-center justify-center flex py-18 flex-col px-4">
 
             <div className="text-center max-w-4xl w-full">
-                <h2 className="text-[#FEFEFE] text-[65px]">SAY HELLO!</h2>
-                <span className="text-[#FEFEFE] text-[25px]">Ask me something, or just send me a message here:</span>
+                <h2 className="text-[#FEFEFE] md:text-[65px] text-[60px]">SAY HELLO!</h2>
+                <span className="text-[#FEFEFE] md:text-[25px] text-[20px]">Ready to bring your product vision to life? Get in touch</span>
             </div>
 
 
