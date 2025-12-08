@@ -5,41 +5,41 @@ import stickyNoteImage from "../../assets/new-portfolio/boss-cab/third-section/3
 const ThirdSection : React.FC = () => {
      return(
         <>
-        <div className="flex flex-row justify-between  bg-[#5A5A5A]">
+        <div className="flex xl:flex-row flex-col justify-between  bg-[#5A5A5A]">
 
          
       
-            <div className="flex-1 border-r border-[#5A5A5A] ">
+            <div className="flex-1 xl:border-r border-[#5A5A5A] max-lg:hidden ">
                 <img src={paperImage} className=""/>    
             </div>
 
 
-            <div className="px-10 py-16 flex-1 bg-[#FBFBFB] border-r  border-[#5A5A5A]">
-                <h2 className="text-[#000000] text-[32px] text-center font-normal mb-6">
-                     Testing
+            <div className="md:px-10  px-7 md:py-16 py-10 flex-1 bg-[#FBFBFB] max-lg:bg-[#F3F3F3] xl:border-r  border-[#5A5A5A]">
+                <h2 className="text-[#000000] md:text-[32px] text-[25px] md:text-center font-medium md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
+                User Persona & Affinity Map
                 </h2>
 
-
-
                 
-                <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
+                <div className="md:space-y-4 text-[#5A5A5A] text-base leading-relaxed">
                     <p>  
-                            I tested the first Cliqmit wireframes with event
-                            organizers and attendees to confirm whether
-                            the booking flow and navigation felt clear.
-                            These sessions revealed that several early
-                            assumptions didn’t match real user behavior,
-                            leading to unnecessary friction in how people
-                            discovered and booked events.
+                        To understand the real problems riders face,
+                        I created a persona representing our core
+                        audience—young professionals who rely on ride
+                        -hailing to save time, avoid stress, and manage
+                        costs. Interviews and an affinity map revealed
+                        consistent issues: unpredictable pricing,
+                        delayed or failed payments, inaccurate ETAs,
+                        and long detours caused by traffic.
                     </p>
 
                     <p>  
-                    By validating each flow with users, I uncovered
-                    simpler, more natural paths that improved
-                    clarity and reduced effort. This helped guide
-                    stakeholders toward a direction that would
-                    create a smoother, more productive experience
-                    for everyone using Cliqmit.
+                        These insights made our focus for Bosscab
+                        clear: offer transparent pricing, faster and
+                        more reliable payments, and smarter route
+                        syncing. Grounding the product in real user
+                        frustrations ensures Bosscab solves the
+                        everyday problems riders deal with on
+                        competing platforms.
                     </p>
                 </div>
             </div>

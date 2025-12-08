@@ -3,21 +3,21 @@ import brainStormingPicture from "../../assets/new-portfolio/boss-cab/fifth-sect
 const FifthSection: React.FC = () => {
     return (
         <>
-             <div className="border-b border-[#5A5A5A] flex flex-row">
-           <div className="w-1/2 border-r border-[#5A5A5A]">
+             <div className="xl:border-b border-[#5A5A5A] flex xl:flex-row flex-col-reverse">
+           <div className="xl:w-1/2 xl:border-r border-[#5A5A5A]">
               <img src={brainStormingPicture} className="w-full h-full object-fill" />
            </div>
 
-           <div className="w-1/2 px-20 py-16 bg-[#FBFBFB]">
-                <h1 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+           <div className="xl:w-1/2 xl:px-20 px-7 lg:px-10 md:py-16 py-10 bg-[#FBFBFB]">
+                <h1 className="text-[#000000] md:text-[32px] text-[25px] md:text-center font-medium md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
                 Brainstorming Solutions
                 </h1>
 
                
                 
-                <div className="space-y-10">
+                <div className="md:space-y-10">
                     <div>
-                        <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                        <h2 className="text-[#000000] text-[16px] font-semibold md:mb-2">
                         CONCEPT EXPLORATION, MIND MAPPING, COMPETITIVE ANALYSIS              
                         </h2>
                         

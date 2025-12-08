@@ -4,10 +4,10 @@ const FourthSection : React.FC = () => {
     return(
         <>
         
-        <div className="border-t  border-[#5A5A5A] flex flex-row">
+        <div className="xl:border-t  border-[#5A5A5A] flex xl:flex-row flex-col">
        
-        <div className="w-1/2  border-[#5A5A5A] border-r px-20 py-20 bg-[#FBFBFB]">
-            <h1 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+        <div className="xl:w-1/2  border-[#5A5A5A] xl:border-r xl:px-20 px-7 lg:px-10 py-10 md:py-20 bg-[#FBFBFB]">
+            <h1 className="text-[#000000] md:text-[32px] text-[25px] md:text-center font-medium md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
             Understanding User Frustrations
             </h1>
 
@@ -46,7 +46,7 @@ const FourthSection : React.FC = () => {
       
 
 
-       <div className="w-1/2 flex justify-center items-center px-10 bg-[#171A23]  ">
+       <div className="xl:w-1/2 flex justify-center items-center xl:px-10 bg-[#171A23]  ">
           <img src={painPointImg} className=""/>
        </div>
     </div>

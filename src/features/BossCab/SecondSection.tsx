@@ -3,16 +3,16 @@ import procesImage from "../../assets/new-portfolio/boss-cab/second-section/2 (5
 const SecondSection : React.FC = () => {
      return(
         <>
-        <div className="flex flex-row border-b border-t justify-between">
+        <div className="flex xl:flex-row flex-col xl:border-b xl:border-t justify-between">
 
          
-            <div className="px-16 py-16 flex-1 bg-[#FBFBFB]">
-                <h2 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+            <div className="xl:px-16 md:px-10 px-7 md:py-16  py-10 flex-1 bg-[#FBFBFB] max-lg:bg-[#F3F3F3]">
+                <h2 className="text-[#000000] md:text-[32px] text-[25px] md:text-center font-medium md:mb-6  max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
                    Discover
                 </h2>
                 
-                <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
-                    <p className="font-bold">Problem Exploration & User Research</p>
+                <div className="md:space-y-4 text-[#5A5A5A] text-base leading-relaxed">
+                    <p className="font-semibold">Problem Exploration & User Research</p>
                     <p>Data shows that 80% of riders complain about
                     price surges on ride-hailing platforms. One
                     company tried letting users choose their own
@@ -33,12 +33,12 @@ const SecondSection : React.FC = () => {
             </div>
 
 
-            <div className="px-16 py-16 flex-1 bg-[#FBFBFB]">
-                <h2 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+            <div className="xl:px-16 md:px-10 px-7 md:py-16  flex-1 bg-[#FBFBFB] max-lg:bg-[#F3F3F3]">
+                <h2 className="text-[#000000] md:text-[32px] text-[25px] max-sm:mt-8 md:text-center font-medium md:mb-6">
                        Define
                 </h2>
                 
-                <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
+                <div className="md:space-y-4 text-[#5A5A5A] text-base leading-relaxed">
                     <p className="font-semibold">Identifying User Pain Points</p>
                     <p>I analyzed the interview data using an affinity
                         map to uncover key themes around user

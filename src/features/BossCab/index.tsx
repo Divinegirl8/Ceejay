@@ -11,13 +11,13 @@ import ThirdSection from "./ThirdSection";
 const BossCab : React.FC = () =>{
     return(
         <>
-             <div className="flex flex-col items-center justify-center py-16">
+             <div className="flex flex-col md:items-center md:justify-center md:py-16 py-10 max-md:px-7">
                   
-                  <h2 className="text-[#000000] text-[50px] text-center font-medium leading-tight mt-5">
+                  <h2 className="text-[#000000] text-[50px] max-sm:text-[30px] xl:text-center  font-medium leading-tight md:mt-5">
                   <span className="block">Bosscab - Transforming Urban Mobility</span>
                   </h2>
 
-                  <span className="text-[#626262] text-[18px] text-center w-[50rem] font-normal mt-3">A comprehensive UX redesign focused on making ride-hailing more affordable, reliable, and efficient through group wallets, instant payments, and localized mapping.</span>
+                  <span className="text-[#626262] text-[18px] md:text-center  md:w-[50rem] font-normal mt-3">A comprehensive UX redesign focused on making ride-hailing more affordable, reliable, and efficient through group wallets, instant payments, and localized mapping.</span>
           </div>
 
           <FirstSection/>
