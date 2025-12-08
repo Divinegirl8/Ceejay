@@ -34,7 +34,7 @@ const SecondSection : React.FC = () => {
 
 
             <div className="xl:px-16 md:px-10 px-7 md:py-16  flex-1 bg-[#FBFBFB] max-lg:bg-[#F3F3F3]">
-                <h2 className="text-[#000000] md:text-[32px] text-[25px] max-sm:mt-8 md:text-center font-medium md:mb-6">
+                <h2 className="text-[#000000] md:text-[32px] text-[25px] max-md:mt-8 md:text-center font-medium md:mb-6">
                        Define
                 </h2>
                 

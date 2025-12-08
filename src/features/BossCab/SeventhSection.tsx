@@ -7,7 +7,7 @@ const SeventhSection : React.FC = () => {
         
         <div className="xl:border-t  border-[#5A5A5A] flex xl:flex-row flex-col-reverse">
 
-        <div className="xl:w-1/2 xl:flex max-lg:py-10 justify-center items-center px-10 bg-[#171A23]  ">
+        <div className="xl:w-1/2 xl:flex sm:py-16 py-10 md:py-20 xl:py-0 justify-center items-center px-10 bg-[#171A23]  ">
           <img src={painPointImg} className=""/>
        </div>
        
