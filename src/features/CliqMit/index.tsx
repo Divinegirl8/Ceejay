@@ -12,7 +12,7 @@ const CliqMitCaseStudy : React.FC = () => {
 
          <div className="flex  flex-col xl:items-center xl:justify-center md:py-16 py-10 max-sm:px-7 px-10 xl:px-0 ">
                   
-                  <h2 className="text-[#000000] text-[50px] max-sm:text-[30px] xl:text-center  font-medium leading-tight mt-5">
+                  <h2 className="text-[#000000] text-[50px] max-sm:text-[30px] xl:text-center  font-medium leading-tight md:mt-5">
                   <span className="block">CliqMit - Discover, Book, and Manage Events</span>
                   </h2>
 
