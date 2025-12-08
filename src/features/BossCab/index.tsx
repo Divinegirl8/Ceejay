@@ -11,7 +11,7 @@ import ThirdSection from "./ThirdSection";
 const BossCab : React.FC = () =>{
     return(
         <>
-             <div className="flex flex-col md:items-center md:justify-center md:py-16 py-10 max-md:px-7">
+             <div className="flex flex-col md:items-center md:justify-center md:py-16 py-10 max-lg:px-7">
                   
                   <h2 className="text-[#000000] text-[50px] max-sm:text-[30px] xl:text-center  font-medium leading-tight md:mt-5">
                   <span className="block">Bosscab - Transforming Urban Mobility</span>
