@@ -3,18 +3,18 @@ import koboPicture from "../../assets/new-portfolio/kobo/fifth-section/Group (3)
 const FifthSection: React.FC = () => {
     return (
         <>
-           <div className="border-t border-b border-[#5A5A5A] flex flex-row">
+           <div className="xl:border-b xl:border-[#5A5A5A] flex xl:flex-row flex-col">
        
 
-       <div className="w-1/2  border-[#5A5A5A] border-r px-20 py-16">
-            <h1 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+       <div className="xl:w-1/2  border-[#5A5A5A] border-r xl:px-20 px-7 md:py-16 py-10">
+            <h1 className="text-[#000000]  md:text-center  text-[25px] md:text-[32px] font-[500] md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
             UI Kit
             </h1>
 
             
             <div className="space-y-10">
                 <div>
-                    <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                    <h2 className="text-[#000000] text-[16px] font-semibold md:mb-2">
                     Visual Language
                     </h2>
                     
@@ -35,7 +35,7 @@ const FifthSection: React.FC = () => {
        </div>
 
 
-       <div className="w-1/2  justify-center bg-[#F2F2F2] items-center flex px-10">
+       <div className="xl:w-1/2  justify-center bg-[#F2F2F2] items-center flex px-10">
           <img src={koboPicture} className=""/>
        </div>
     </div>

@@ -1,20 +1,21 @@
-import ideateImage from "../../assets/new-portfolio/kobo/third-section/Group.png"
+import ideateImage from "../../assets/new-portfolio/kobo/third-section/Group.png";
+import mobIdeateImage from "../../assets/new-portfolio/kobo/third-section/2i 1.png";
 
 const ThirdSection : React.FC = () => {
     return(
         <>
         
-        <div className="border-t border-[#5A5A5A] flex flex-row">
+        <div className=" flex xl:flex-row flex-col">
        
 
-           <div className="w-1/2  border-[#5A5A5A] border-r px-20 py-16 bg-[#FBFBFB]">
-                <h1 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+           <div className="xl:w-1/2  border-[#5A5A5A] border-r xl:px-20 px-7 md:py-16 py-10 bg-[#FBFBFB]">
+                <h1 className="text-[#000000] md:text-center  text-[25px] md:text-[32px] font-[500] md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
                     Design process
                 </h1>
                 
-                <div className="space-y-10">
+                <div className="md:space-y-10 space-y-7">
                     <div>
-                        <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                        <h2 className="text-[#000000] text-[16px] font-semibold md:mb-2">
                         User Research
                         </h2>
                         
@@ -31,7 +32,7 @@ const ThirdSection : React.FC = () => {
                     </div>
 
                     <div>
-                        <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                        <h2 className="text-[#000000] text-[16px] font-semibold md:mb-2">
                         Security-First Design
                         </h2>
                         
@@ -49,8 +50,11 @@ const ThirdSection : React.FC = () => {
            </div>
 
 
-           <div className="w-1/2  justify-center items-center flex px-10 bg-[#F2F2F2]">
+           <div className="xl:w-1/2  xl:justify-center xl:items-center xl:flex xl:px-10 xl:bg-[#F2F2F2] hidden">
               <img src={ideateImage} className=""/>
+           </div>
+           <div className="xl:hidden">
+              <img src={mobIdeateImage} className=""/>
            </div>
         </div>
         

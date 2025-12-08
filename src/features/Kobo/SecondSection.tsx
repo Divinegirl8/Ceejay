@@ -4,19 +4,19 @@ const SecondSection : React.FC = () => {
     return(
         <>
         
-        <div className="border-t border-b border-[#5A5A5A] flex flex-row">
-           <div className="w-1/2 border-r border-[#5A5A5A]">
+        <div className="xl:border-t xl:border-b xl:border-[#5A5A5A] flex xl:flex-row flex-col-reverse">
+           <div className="xl:w-1/2 xl:border-r xl:border-[#5A5A5A]">
               <img src={manImage} className="w-full h-full object-cover"/>
            </div>
 
-           <div className="w-1/2 px-20 py-16">
-                <h1 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+           <div className="xl:w-1/2 xl:px-20 px-7 xl:py-16 py-10 ">
+                <h1 className="text-[#000000]  text-[25px] md:text-[32px] md:text-center font-[500] md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A] ">
                     Challenge
                 </h1>
                 
-                <div className="space-y-10">
+                <div className="md:space-y-10 space-y-7">
                     <div>
-                        <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                        <h2 className="text-[#000000] text-[16px] font-semibold md:mb-2">
                             Problem
                         </h2>
                         
@@ -26,7 +26,7 @@ const SecondSection : React.FC = () => {
                     </div>
 
                     <div>
-                        <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                        <h2 className="text-[#000000] text-[16px] font-semibold  md:mb-2">
                             Solution
                         </h2>
                         

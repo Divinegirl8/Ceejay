@@ -11,7 +11,7 @@ const Footer:React.FC = () =>{
     return(
         <>
 
-        <div className="md:px-20 py-10 bg-white px-7 ">
+        <div className="xl:px-20 py-10 bg-white px-7 ">
 
             <div className="flex flex-col leading-tight"> 
                 <span className="text-[#000000] font-[600] md:text-[60px] text-[50px]">Let’s create</span>

@@ -3,11 +3,11 @@ import procesImage from "../../assets/new-portfolio/cliqmit/second-section/2 (3)
 const SecondSection : React.FC = () => {
      return(
         <>
-        <div className="flex flex-row justify-between">
+        <div className="flex md:flex-row flex-col justify-between">
 
          
-            <div className="px-16 py-16 flex-1 bg-[#FBFBFB]">
-                <h2 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+            <div className="xl:px-16 md:px-10 px-7 md:py-16 py-10 flex-1 bg-[#FBFBFB]">
+                <h2 className="text-[#000000] text-[25px] md:text-[32px] md:text-center font-medium md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
                     Design Process
                 </h2>
                 
@@ -21,8 +21,8 @@ const SecondSection : React.FC = () => {
             </div>
 
 
-            <div className="px-16 py-16 flex-1 bg-[#FBFBFB]">
-                <h2 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+            <div className="md:px-16 px-7 md:py-16 py-7 flex-1 bg-[#FBFBFB]">
+                <h2 className="text-[#000000] text-[25px] md:text-[32px] md:text-center font-medium md:mb-6">
                     Business, Users, & Data
                 </h2>
                 

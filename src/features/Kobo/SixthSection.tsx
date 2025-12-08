@@ -3,22 +3,21 @@ import koboPicture from "../../assets/new-portfolio/kobo/sixth-section/Phone moc
 const SixthSection: React.FC = () => {
     return (
         <>
-             <div className="border-b border-[#5A5A5A] flex flex-row">
-           <div className="w-1/2 border-r border-[#5A5A5A] bg-[#00B48D] justify-center items-center flex px-10 py-20">
+             <div className="border-b border-[#5A5A5A] flex xl:flex-row flex-col-reverse">
+           <div className="xl:w-1/2 border-r border-[#5A5A5A] bg-[#00B48D] justify-center items-center flex px-10 py-20">
               <img src={koboPicture} className=" w-[600px] " />
            </div>
 
-           <div className="w-1/2 px-20 py-16 bg-[#FBFBFB]">
-                <h1 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+           <div className="xl:w-1/2 xl:px-20 px-7 md:py-16 py-10 bg-[#FBFBFB]">
+                <h1 className="text-[#000000] text-[25px] md:text-[32px] font-[500] md:text-center  md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
                 Lessons
                 </h1>
 
                
-
                 
-                <div className="space-y-10">
+                <div className="md:space-y-10 space-y-7">
                     <div>
-                        <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                        <h2 className="text-[#000000] text-[16px] font-semibold md:mb-2">
                           Trust Through Transparency                
                         </h2>
                         
@@ -28,7 +27,7 @@ const SixthSection: React.FC = () => {
 
 
                     <div>
-                        <h2 className="text-[#000000] text-[16px] font-medium mb-2">
+                        <h2 className="text-[#000000] text-[16px] font-semibold  md:mb-2">
                         Progressive Complexity Initially
                         </h2> 
                         

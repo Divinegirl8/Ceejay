@@ -3,15 +3,15 @@ import koboPicture from "../../assets/new-portfolio/kobo/first-section/kobo.png"
 const FirstSection: React.FC = () => {
     return (
         <>
-            <div className="border-t border-[#5A5A5A] flex flex-row">
+            <div className="md:border-t border-[#5A5A5A] flex flex-col xl:flex-row ">
               
-                <div className="w-1/2  border-r border-[#5A5A5A] flex flex-col">
+                <div className="xl:w-1/2  border-r border-[#5A5A5A] flex flex-col">
                    
-                <div className="border-b px-20  py-10 border-[#5A5A5A] relative">
+                <div className="border-b xl:px-20 max-lg:px-7 lg:px-10 md:py-10 border-[#5A5A5A] relative ">
                         <h1 className="text-[#000000] text-[50px] font-normal leading-tight mb-8">
-                            <span className="block">Packaging</span>
-                            <span className="block">Design for ABC</span>
-                            <span className="block">Product</span>
+                            <span className="hidden md:block">Packaging</span>
+                            <span className="hidden md:block">Design for ABC</span>
+                            <span className="hidden md:block">Product</span>
                         </h1>
                         
                         <button className="absolute -bottom-[26px] right-16 px-8 py-3 border border-[#5A5A5A] bg-white rounded-full text-base hover:bg-gray-50 transition-colors inline-flex items-center gap-2">
@@ -23,8 +23,8 @@ const FirstSection: React.FC = () => {
                     </div>
 
                     
-                    <div className="px-16 py-16 flex-1">
-                        <h2 className="text-[#000000] text-[32px] text-center font-normal mb-6">
+                    <div className="xl:px-16  px-7 md:py-16 py-10 flex-1">
+                        <h2 className="text-[#000000] md:text-[32px] text-[25px] md:text-center font-[500] md:mb-6">
                             Project Brief
                         </h2>
                         
@@ -40,8 +40,8 @@ const FirstSection: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="w-1/2 my-auto py-10">
-            <div className="flex flex-row justify-evenly items-stretch gap-8 px-14  ">
+                <div className="xl:w-1/2 my-auto md:py-10">
+            <div className="flex flex-row justify-evenly items-stretch gap-8 md:px-14   ">
                 <div className="">
                     <img 
                         src={koboPicture} 
@@ -49,7 +49,7 @@ const FirstSection: React.FC = () => {
                     />
                 </div>
 
-        <div className="flex flex-col justify-between">
+        <div className="md:flex flex-col justify-between hidden">
             <div className="text-[#000000] text-sm tracking-wider z-10"
                 style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)'}}>
                 Date <span className="font-[600]">01.01.2025</span>

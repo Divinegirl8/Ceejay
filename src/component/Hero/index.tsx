@@ -20,7 +20,7 @@ const Hero : React.FC = () => {
                 <img 
                     src={luckyPicture} 
                     alt="Lucky Ekezie"
-                    className="w-full h-auto object-cover absolute top-0 left-0 hidden md:block"
+                    className="w-full lg:h-auto md:h-full object-cover absolute top-0 left-0 hidden md:block"
                 />
               
                  <img 
@@ -30,17 +30,17 @@ const Hero : React.FC = () => {
                 />
               
                 {/* Content overlay */}
-                <div className="flex flex-col gap-2 items-center justify-center h-full pt-[18rem]  relative z-10">
-                    <h1 className="text-white md:text-[70px] text-[60px] font-semibold max-sm:px-10 max-sm:text-center md:tracking-widest leading-[4rem]">
+                <div className="flex flex-col gap-2 items-center justify-center h-full pt-[18rem] xl:pt-[18rem] md:pt-[5rem]   relative z-10">
+                    <h1 className="text-white xl:text-[70px] text-[60px] font-semibold max-sm:px-10 max-sm:text-center md:tracking-widest leading-[4rem]">
                         LUCKY EKEZIE
                     </h1>
 
-                    <span className="text-[#DEDEDE] md:text-[25px] text-[20px] font-medium">AI-Driven Product Design Leader</span>
+                    <span className="text-[#DEDEDE] xl:text-[25px] text-[20px] font-medium">AI-Driven Product Design Leader</span>
 
-                    <div className={`flex flex-col items-center mt-14`}>
+                    <div className={`flex flex-col items-center xl:mt-14 mt-14 md:mt-5`}>
                         <div className={`${style.animateSlowBounce} cursor-pointer`} onClick={() => scrollToSection('nav')}><img src={arrowIcon} alt="Scroll down"/></div>
                     
-                        <span className="text-[#DEDEDE] text-[14px] mt-2">SCROLL UP</span>
+                        <span className="text-[#DEDEDE] text-[14px] mt-2 ">SCROLL UP</span>
                     </div>
                 </div>
             </div>

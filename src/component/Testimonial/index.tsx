@@ -73,7 +73,7 @@ const Testimonial: React.FC = () => {
 
     return (
         <>
-            <div className="max-md:px-7 px-20 py-10">
+            <div className="px-7 xl:px-20 lg:px-10  py-10">
                 <span className="text-[#626262] text-[18px] max-md:text-[14px] font-medium">
                     CLIENT TESTIMONIALS
                 </span>
@@ -81,7 +81,7 @@ const Testimonial: React.FC = () => {
                 <div className="mt-10 max-md:mt-6">
                   
                     <div 
-                         className="relative w-full h-[400px] max-md:h-[450px] overflow-hidden"
+                         className="relative w-full xl:h-[400px] max-lg:h-[450px] overflow-hidden"
                          
                         onTouchStart={onTouchStart}
                         onTouchMove={onTouchMove}
@@ -91,7 +91,7 @@ const Testimonial: React.FC = () => {
                         <div className="relative z-10 h-full flex flex-col justify-between">
                             
                             <div className="max-md:mb-8">
-                                <p className="text-black text-[45px] max-md:text-[24px] leading-[1.4] max-md:leading-[1.5] font-normal">
+                                <p className="text-black xl:text-[45px] text-[30px] max-md:text-[22px] leading-[1.4] max-md:leading-[1.5] font-normal">
                                     {testimonials[currentIndex].text}
                                 </p>
                             </div>
@@ -156,28 +156,25 @@ const Testimonial: React.FC = () => {
                     </div>
                 </div>
 
-              
-                <div className="flex flex-col gap-10 py-20 mt-10 justify-center items-center max-md:hidden">
-                    <div className="flex flex-row gap-[69px]">
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                    </div>
 
-                    <div className="flex flex-row gap-[69px]">
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                        <img src={conservaIcon} alt="conversa"/>
-                    </div>
-                </div>
+
+            <div className="grid grid-cols-4 xl:grid-cols-7 gap-[69px] py-20 mt-10 xl:justify-center xl:items-center max-md:hidden">
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
+                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
+                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
+                
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa"/>
+                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
+                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
+                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
+            </div>
             </div>
         </>
     );

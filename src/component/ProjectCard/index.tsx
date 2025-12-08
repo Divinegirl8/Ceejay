@@ -16,9 +16,9 @@ interface ProjectCardProps {
     imageOnLeft = true
   }) => {
     return (
-      <div className="max-md:px-7 px-20 max-md:pt-2 pt-5">
+      <div className="max-lg:px-7 px-20 max-md:pt-2 pt-5">
         <div className="border-t border-gray-300 max-md:py-10 py-16">
-          <div className={`flex flex-col ${imageOnLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-stretch`}>
+          <div className={`flex flex-col ${imageOnLeft ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:items-center xl:items-stretch`}>
             
             {/* Image Section */}
             <div className="w-full md:w-1/2">
@@ -36,10 +36,10 @@ interface ProjectCardProps {
             {/* Content Section */}
             <div className="w-full md:w-1/2 flex flex-col  justify-between">
                <div>
-               <h2 className="text-[30px] md:text-[40px] font-medium text-[#000000] mb-4">
+               <h2 className="text-[30px] lg:text-[40px] font-medium text-[#000000] mb-4">
                 {title}
               </h2>
-              <p className="text-[20px] md:text-[25px] text-[#626262] mb-6 leading-tight flex-grow">
+              <p className="text-[20px] lg:text-[25px] text-[#626262] mb-6 leading-tight flex-grow">
                 {description}
               </p>
                </div>
