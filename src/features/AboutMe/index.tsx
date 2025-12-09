@@ -80,7 +80,7 @@ const AboutMe : React.FC = () =>{
                 <div className="relative">
                     <h4 className="font-[800] md:text-[64px] text-[40px]">30+</h4>
                     <p className="font-normal md:text-[18px] text-[16px] text-[#626262] w-[17rem]">Projects designed across fintech, mobility, gaming & media</p>
-                    <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[1px] h-[40px] bg-[#D4D4D4] md:block hidden"></div>
+                    <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[1px] h-[40px] bg-[#D4D4D4] xl:block hidden"></div>
                 </div>
 
                 <div>
