@@ -23,7 +23,7 @@ const AboutMe : React.FC = () =>{
             </div>
 
             <div className="flex xl:flex-row flex-col gap-10 items-stretch md:mt-20 mt-5">
-                    <div className="md:w-[40%] flex-shrink-0">
+                    <div className="lg:w-[40%] flex-shrink-0">
                         <img src={luckyImg} alt="luckyImg" className="w-full h-full md:object-cover"/>
                     </div>
                     <div className="flex-1">
