@@ -1,26 +1,4 @@
-// import About from "../components/About"
-// import Homepage from "../features/Homepage"
-// import Layout from "../Layout"
-
-// export const Routes = [
-//     {
-//         path : "/",
-//         element : <Layout/>,
-//         children : [ 
-//             {
-//              path : "/",
-//              element : <Homepage/>
-//             },
-//             {
-//                 path : "/about",
-//                 element : <About/>
-//             }
-//         ]
-//     }
-// ]
-
-
-
+import AboutMe from "../features/AboutMe"
 import BossCab from "../features/BossCab"
 import CliqMitCaseStudy from "../features/CliqMit"
 import Home from "../features/Home"
@@ -43,6 +21,10 @@ export const Routes = [
             {
                 path : "case-study/bosscab",
                 element : <BossCab/>
+               },
+               {
+                path : "about/me",
+                element : <AboutMe/>
                }
         ]},
         {
