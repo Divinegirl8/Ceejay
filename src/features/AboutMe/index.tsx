@@ -27,7 +27,7 @@ const AboutMe : React.FC = () =>{
                         <img src={luckyImg} alt="luckyImg" className="w-full h-full md:object-cover"/>
                     </div>
                     <div className="flex-1">
-                        <div className="w-full h-full bg-[#F4F4F4] px-10 py-10 flex flex-col">
+                        <div className="w-full h-full bg-[#F4F4F4] md:px-10 px-5 py-10 flex flex-col">
                             <h4 className="text-[30px] text-black font-semibold">Lucky Ekezie</h4>
                             <p className="text-[16px] font-[500] text-[#626262]">AI-Driven Product Design Leader</p>
 
@@ -69,23 +69,23 @@ const AboutMe : React.FC = () =>{
                     <p className="font-normal text-[16px] text-[#626262] md:w-[30rem]">Key highlights from 8+ years of designing impactful digital experiences.</p>
                </div>
 
-            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 md:gap-30 md:items-center md:mt-16 mt-5">
+            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:gap-30 md:items-center md:mt-16 mt-5">
                 <div className="relative">
-                    <h4 className="font-[800] text-[64px]">08+</h4>
-                    <p className="font-normal text-[18px] text-[#626262] w-[14rem]">Years of Creative & Product Design Experience</p>
+                    <h4 className="font-[800] md:text-[64px] text-[40px] ">08+</h4>
+                    <p className="font-normal md:text-[18px] text-[16px] text-[#626262] w-[14rem]">Years of Creative & Product Design Experience</p>
              
                     <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[1px] h-[40px] bg-[#D4D4D4] md:block hidden"></div>
                 </div>
 
                 <div className="relative">
-                    <h4 className="font-[800] text-[64px]">30+</h4>
-                    <p className="font-normal text-[18px] text-[#626262] w-[17rem]">Projects designed across fintech, mobility, gaming & media</p>
+                    <h4 className="font-[800] md:text-[64px] text-[40px]">30+</h4>
+                    <p className="font-normal md:text-[18px] text-[16px] text-[#626262] w-[17rem]">Projects designed across fintech, mobility, gaming & media</p>
                     <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[1px] h-[40px] bg-[#D4D4D4] md:block hidden"></div>
                 </div>
 
                 <div>
-                    <h4 className="font-[800] text-[64px]">15+</h4>
-                    <p className="font-normal text-[18px] text-[#626262] w-[16rem]">Products designed, improved, or contributed to</p>
+                    <h4 className="font-[800] md:text-[64px] text-[40px]">15+</h4>
+                    <p className="font-normal md:text-[18px] text-[16px]  text-[#626262] w-[16rem]">Products designed, improved, or contributed to</p>
                 </div>
             </div>
 
