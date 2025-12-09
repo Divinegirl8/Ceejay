@@ -22,9 +22,9 @@ const AboutMe : React.FC = () =>{
                     <p className="font-normal text-[16px] text-[#626262] md:w-[34rem]">I’m an AI-driven Product Designer blending creativity, strategy, and technology to build simple, human-centered digital experiences.</p>
             </div>
 
-            <div className="flex xl:flex-row flex-col gap-10 items-stretch md:mt-20">
-                    <div className="w-[40%] flex-shrink-0">
-                        <img src={luckyImg} alt="luckyImg" className="w-full h-full object-cover"/>
+            <div className="flex xl:flex-row flex-col gap-10 items-stretch md:mt-20 mt-5">
+                    <div className="md:w-[40%] flex-shrink-0">
+                        <img src={luckyImg} alt="luckyImg" className="w-full h-full md:object-cover"/>
                     </div>
                     <div className="flex-1">
                         <div className="w-full h-full bg-[#F4F4F4] px-10 py-10 flex flex-col">
@@ -64,12 +64,12 @@ const AboutMe : React.FC = () =>{
                     </div>
             </div>
 
-               <div className="flex flex-col md:gap-3 md:mt-26 mt-5">
+               <div className="flex flex-col md:gap-3 md:mt-26 mt-10">
                     <h3 className="font-semibold md:text-[35px] text-[25px] text-[#000000]">Overview.</h3>
                     <p className="font-normal text-[16px] text-[#626262] md:w-[30rem]">Key highlights from 8+ years of designing impactful digital experiences.</p>
                </div>
 
-            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-30 items-center md:mt-16 mt-5">
+            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-2 md:gap-30 md:items-center md:mt-16 mt-5">
                 <div className="relative">
                     <h4 className="font-[800] text-[64px]">08+</h4>
                     <p className="font-normal text-[18px] text-[#626262] w-[14rem]">Years of Creative & Product Design Experience</p>
@@ -89,123 +89,104 @@ const AboutMe : React.FC = () =>{
                 </div>
             </div>
 
-            <div className="flex flex-col md:gap-3 md:mt-26 mt-5">
+            <div className="flex flex-col md:gap-3 md:mt-26 mt-10">
                     <h3 className="font-semibold md:text-[35px] text-[25px] text-[#000000]">Skills.</h3>
                     <p className="font-normal text-[16px] text-[#626262] md:w-[27.5rem]">These skills reflect the methods, techniques, and principles I use to create effective, scalable digital products.</p>
                </div>
 
-               <div className="grid xl:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-x-20 gap-y-5 md:mt-12 mt-5">
-                   <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
+               {/* skills */}
 
-                     <div className="h-[50px] w-[50px] bg-[#E9F4FF] rounded-full items-center  justify-center flex ">
-                         <img src={cpuIcon} alt="cpuIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">Systems Thinking and Problem-Solving</p>
-                    </div>
+                    <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-x-4  md:gap-y-5 gap-y-3 md:mt-12 mt-5">
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#E9F4FF] rounded-full items-center justify-center flex">
+                            <img src={cpuIcon} alt="cpuIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">Systems Thinking and Problem-Solving</p>
+                            </div>
+                        </div>
 
-                   </div>
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#EAF9EE] rounded-full items-center justify-center flex">
+                            <img src={chartIcon} alt="chartIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">User-Centered Design and Business Strategy</p>
+                            </div>
+                        </div>
 
-                   <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#FFF3EC] rounded-full items-center justify-center flex">
+                            <img src={penIcon} alt="penIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">Information Architecture and Interaction Design</p>
+                            </div>
+                        </div>
 
-                     <div className="h-[50px] w-[50px] bg-[#EAF9EE] rounded-full items-center  justify-center flex ">
-                         <img src={chartIcon} alt="chartIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">User-Centered Design and Business Strategy</p>
-                    </div>
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#F2EFFF] rounded-full items-center justify-center flex">
+                            <img src={toolIcon} alt="toolIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">Design Systems Creation and Maintenance</p>
+                            </div>
+                        </div>
 
-                   </div>
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#E8F6F6] rounded-full items-center justify-center flex">
+                            <img src={bezeirToolIcon} alt="bezeirToolIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">Rapid Prototyping and User Validation</p>
+                            </div>
+                        </div>
 
-                   <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#FEFAED] rounded-full items-center justify-center flex">
+                            <img src={statusIcon} alt="statusIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">Data-Informed Design & Product Analytics</p>
+                            </div>
+                        </div>
 
-                     <div className="h-[50px] w-[50px] bg-[#FFF3EC] rounded-full items-center  justify-center flex ">
-                         <img src={penIcon} alt="penIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">Information Architecture and Interaction Design</p>
-                    </div>
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#FFEEEF] rounded-full items-center justify-center flex">
+                            <img src={monitorIcon} alt="monitorIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">AI Product Design and LLM Integration</p>
+                            </div>
+                        </div>
 
-                   </div>
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#E5E8EB] rounded-full items-center justify-center flex">
+                            <img src={trendIcon} alt="trendIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">A/B Testing & Growth Optimization</p>
+                            </div>
+                        </div>
 
-                    <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#F4F6F8] rounded-full items-center justify-center flex">
+                            <img src={userIcon} alt="userIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">Leadership and Cross-Functional Collaboration</p>
+                            </div>
+                        </div>
 
-                     <div className="h-[50px] w-[50px] bg-[#F2EFFF] rounded-full items-center  justify-center flex ">
-                         <img src={toolIcon} alt="toolIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">Design Systems Creation and Maintenance</p>
-                    </div>
-
-                   </div>
-
-                     <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
-
-                     <div className="h-[50px] w-[50px] bg-[#E8F6F6] rounded-full items-center  justify-center flex ">
-                         <img src={bezeirToolIcon} alt="bezeirToolIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">Rapid Prototyping and User Validation</p>
-                    </div>
-
-                   </div>
-
-                      <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
-
-                     <div className="h-[50px] w-[50px] bg-[#FEFAED] rounded-full items-center  justify-center flex ">
-                         <img src={statusIcon} alt="statusIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">Data-Informed Design & Product Analytics</p>
-                    </div>
-
-                   </div>
-
-                     <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
-
-                     <div className="h-[50px] w-[50px] bg-[#FFEEEF] rounded-full items-center  justify-center flex ">
-                         <img src={monitorIcon} alt="monitorIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">AI Product Design and LLM Integration</p>
-                    </div>
-
-                   </div>
-
-                    <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
-
-                     <div className="h-[50px] w-[50px] bg-[#E5E8EB] rounded-full items-center  justify-center flex ">
-                         <img src={trendIcon} alt="trendIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">A/B Testing & Growth Optimization</p>
-                    </div>
-
-                   </div>
-
-                     <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
-
-                     <div className="h-[50px] w-[50px] bg-[#F4F6F8] rounded-full items-center  justify-center flex ">
-                         <img src={userIcon} alt="userIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">Leadership and Cross- Functional Collaboration</p>
-                    </div>
-
-                   </div>
-
-                    <div className="bg-[#FFFFFF] w-[230px] h-[150px] flex flex-col px-5 pt-5 gap-2  items-start">
-
-                     <div className="h-[50px] w-[50px] bg-[#EFF0FE] rounded-full items-center  justify-center flex ">
-                         <img src={peopleIcon} alt="peopleIcon" />
-                     </div>
-                     <div className="mt-2">
-                        <p className="font-medium text-[16px] text-black">Accessibility and Inclusive Design</p>
-                    </div>
-
-                   </div>
-
-               </div>
+                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                            <div className="h-[40px] w-[40px] bg-[#EFF0FE] rounded-full items-center justify-center flex">
+                            <img src={peopleIcon} alt="peopleIcon" className="w-5 h-5" />
+                            </div>
+                            <div className="mt-1">
+                            <p className="font-medium text-[15px] text-black leading-tight">Accessibility and Inclusive Design</p>
+                            </div>
+                        </div>
+                        </div>
             
 
        </div>
