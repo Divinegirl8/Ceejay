@@ -1,3 +1,4 @@
+import ResumeViewer from "../component/ResumeViewer"
 import AboutMe from "../features/AboutMe"
 import BossCab from "../features/BossCab"
 import CliqMitCaseStudy from "../features/CliqMit"
@@ -30,6 +31,11 @@ export const Routes = [
         {
             path : "/",
              element : <Home/>
-        }
+        },
+        {
+            path: "/resume",
+            element: <ResumeViewer />
+          }
+          
     
 ]

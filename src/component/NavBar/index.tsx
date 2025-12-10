@@ -7,6 +7,8 @@ import instagramIcon from "../../assets/new-portfolio/footer/Instagram.svg";
 import mediumIcon from "../../assets/new-portfolio/footer/Medium.svg";
 import xIcon from "../../assets/new-portfolio/footer/X.svg";
 
+
+
 const NavBar: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
@@ -37,6 +39,10 @@ const NavBar: React.FC = () => {
             document.body.style.overflow = 'unset';
         };
     }, [isMenuOpen]);
+
+    const openResume = () => {
+        window.open("/resume", "_blank");
+      };
 
     return (
         <>
@@ -107,7 +113,7 @@ const NavBar: React.FC = () => {
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('teaching')}>Teaching & mentorship</span>
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('contact')}>Contact me</span>
                                 <span className="cursor-pointer hover:opacity-70" onClick={()=>navigate("about/me")}>About me</span>
-                                <span className="cursor-pointer hover:opacity-70">My resume</span>
+                                <span className="cursor-pointer hover:opacity-70" onClick={openResume}>My resume</span>
                                 <span className="cursor-pointer hover:opacity-70">Publications</span>
                             </div>
                             
