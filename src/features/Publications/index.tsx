@@ -132,12 +132,12 @@ const Publications: React.FC = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-16 mb-12 border-b border-gray-300 ">
+      <div className="flex md:gap-16  gap-2 mb-12 border-b border-gray-300 ">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => handleTabChange(tab)}
-            className={`pb-4 text-sm font-[500] transition-colors relative  cursor-pointer ${
+            className={`pb-4 text-sm font-[500] transition-colors relative  md:cursor-pointer ${
               activeTab === tab
                 ? 'text-black'
                 : 'text-[#626262] '
