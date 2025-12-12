@@ -15,7 +15,7 @@ const AboutMe : React.FC = () =>{
     return(
         <>
         
-       <div className="xl:px-[8.5rem] lg:px-10 px-7 md:py-30 py-10 ">
+       <div className="xl:px-[8.5rem] lg:px-10 px-7 md:py-30 py-10">
 
             <div className="flex flex-col md:gap-3">
                     <h3 className="font-semibold md:text-[35px] text-[25px] text-[#000000]">About Me.</h3>

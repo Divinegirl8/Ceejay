@@ -42,8 +42,13 @@ const NavBar: React.FC = () => {
 
     const openResume = () => {
         window.open("/resume", "_blank");
+        setIsMenuOpen(false);
       };
 
+      const handleMenuNavigation = (path: string) => {
+        navigate(path);
+        setIsMenuOpen(false);
+    };
     return (
         <>
             {/* Main Navigation Bar */}
@@ -112,9 +117,9 @@ const NavBar: React.FC = () => {
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('ai')}>AI journey</span>
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('teaching')}>Teaching & mentorship</span>
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('contact')}>Contact me</span>
-                                <span className="cursor-pointer hover:opacity-70" onClick={()=>navigate("about/me")}>About me</span>
+                                <span className="cursor-pointer hover:opacity-70" onClick={() => handleMenuNavigation("about/me")}>About me</span>
                                 <span className="cursor-pointer hover:opacity-70" onClick={openResume}>My resume</span>
-                                <span className="cursor-pointer hover:opacity-70">Publications</span>
+                                <span className="cursor-pointer hover:opacity-70"  onClick={() => handleMenuNavigation("publications")}>Publications</span>
                             </div>
                             
                             {/* Contact Information */}

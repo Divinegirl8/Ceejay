@@ -1,7 +1,7 @@
 const ResumeViewer = () => {
     return (
       <iframe 
-        src="/Miti_Kotak_Resume.pdf"
+        src="/EKEZIE_CV_Product Design.pdf"
         style={{ width: "100%", height: "100vh", border: "none" }}
       />
     );

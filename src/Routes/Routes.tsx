@@ -4,6 +4,7 @@ import BossCab from "../features/BossCab"
 import CliqMitCaseStudy from "../features/CliqMit"
 import Home from "../features/Home"
 import KoboCaseStudy from "../features/Kobo"
+import Publications from "../features/Publications"
 import Layout from "../Layout"
 
 export const Routes = [
@@ -26,6 +27,10 @@ export const Routes = [
                {
                 path : "about/me",
                 element : <AboutMe/>
+               },
+               {
+                path : "publications",
+                element : <Publications/>
                }
         ]},
         {
