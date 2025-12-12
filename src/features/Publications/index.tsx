@@ -34,7 +34,7 @@ const Publications: React.FC = () => {
       image: luckyImage,
       category: 'Lifestyle',
       source: 'Techeconomy.com',
-      date: '18 Sep, 2025',
+      date: '18 Sep. 2025',
       title: 'Using Design to Make African Startups...',
       description: "Africa's startup sector is thriving, but one important piece that has often been missing is design that...",
   
@@ -54,7 +54,7 @@ const Publications: React.FC = () => {
       image: veoImage,
       category: 'Artificial Intelligence',
       source: 'Medium.com',
-      date: '02 Jun, 2025',
+      date: '02 Jun. 2025',
       title: 'Why Are There So Many AI Tools?',
       description: 'Last weekend, I had the honor of speaking at an AI training event hosted by Vow TV on May 30...',
     
@@ -64,7 +64,7 @@ const Publications: React.FC = () => {
       image: jetImage,
       category: 'Artificial Intelligence',
       source: 'Medium.com',
-      date: '07 Apr, 2025',
+      date: '07 Apr. 2025',
       title: "A Beginner's Guide for Generative Artists",
       description: 'Generative art is like magic. You type in a few words, and suddenly, a beautiful image appears...',
    
@@ -74,7 +74,7 @@ const Publications: React.FC = () => {
       image: senseImage,
       category: 'Design',
       source: 'Medium.com',
-      date: '17 Jul, 2023',
+      date: '10 Oct. 2025',
       title: 'Why Product Designers Need to Build',
       description: 'A few years ago, I asked myself a simple question that changed everything about how I approach design...',
  
@@ -84,7 +84,7 @@ const Publications: React.FC = () => {
       image: paperImage,
       category: 'Design',
       source: 'Medium.com',
-      date: '02 Apr, 2023',
+      date: '05 Apr. 2023',
       title: 'Staying Relevant As a Product Designer',
       description: 'Staying relevant in the tech industry as a product designer requires ongoing learning and skill...',
   
@@ -94,7 +94,7 @@ const Publications: React.FC = () => {
       image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&h=300&fit=crop',
       category: 'Business',
       source: 'Dribbble.com',
-      date: '15 Mar, 2023',
+      date: '15 Mar. 2023',
       title: 'The Future of UI/UX Design Trends',
       description: 'Exploring emerging design patterns and how they shape user experiences in modern applications...',
    
