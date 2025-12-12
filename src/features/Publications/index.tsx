@@ -156,22 +156,22 @@ const Publications: React.FC = () => {
         {visiblePublications.map((pub) => (
           <div key={pub.id} className="overflow-hidden transition-shadow">
             {/* Image Section */}
-            <div className={`relative  overflow-hidden`}>
-              <img 
-                src={pub.image} 
-                alt={pub.title}
-                className=" "
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-md h-[70px] px-7 py-4  flex justify-between items-start text-white">
+            <div className="relative overflow-hidden w-full">
+                <img 
+                    src={pub.image} 
+                    alt={pub.title}
+                    className="w-full h-auto object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-white/20 backdrop-blur-xl h-[70px] px-7 py-4 flex justify-between items-start text-white">
                 <div className="text-[13px]">
-                  <div className="font-semibold">{pub.source}</div>
-                  <div className="opacity-90 font-normal">{pub.date}</div>
+                <div className="font-semibold">{pub.source}</div>
+                <div className=" font-normal">{pub.date}</div>
                 </div>
-                <div className="text-[13px] font-[700] ">
-                  {pub.category}
+                <div className="text-[13px] font-[700]">
+                {pub.category}
                 </div>
-              </div>
             </div>
+        </div>
 
             {/* Content Section */}
             <div className="py-5">
