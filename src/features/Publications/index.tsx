@@ -132,7 +132,7 @@ const Publications: React.FC = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex md:gap-16  gap-2 mb-12 border-b border-gray-300 ">
+      <div className="flex sm:gap-10 md:gap-16  gap-2 mb-12 border-b border-gray-300 ">
         {tabs.map((tab) => (
           <button
             key={tab}
