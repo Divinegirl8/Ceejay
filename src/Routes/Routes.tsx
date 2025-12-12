@@ -1,5 +1,6 @@
 import ResumeViewer from "../component/ResumeViewer"
 import AboutMe from "../features/AboutMe"
+import AIGenerativeDesign from "../features/AIGenerativeDesign"
 import BossCab from "../features/BossCab"
 import CliqMitCaseStudy from "../features/CliqMit"
 import Home from "../features/Home"
@@ -31,6 +32,10 @@ export const Routes = [
                {
                 path : "publications",
                 element : <Publications/>
+               },
+               {
+                path : "ai/generative/designs",
+                element : <AIGenerativeDesign/>
                }
         ]},
         {

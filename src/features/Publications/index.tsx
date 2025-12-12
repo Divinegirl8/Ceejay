@@ -125,7 +125,7 @@ const Publications: React.FC = () => {
     <div className="xl:px-[8.5rem] lg:px-10 px-7 md:py-30 py-10">
       {/* Header */}
       <div className="mb-12">
-        <h2 className="text-[35px] font-semibold text-black mb-4">Publications.</h2>
+        <h2 className="md:text-[35px] text-[25px] font-semibold text-black mb-4">Publications.</h2>
         <p className="text-[#626262] text-[16px] max-w-lg leading-relaxed font-normal">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id lorem consectetur, porta enim id, pretium ligula. Donec ultricies massa id risus semper.
         </p>
