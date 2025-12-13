@@ -30,48 +30,53 @@ const NavBar: React.FC = () => {
 
     useEffect(() => {
         if (isMenuOpen) {
+            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+            
             document.body.style.overflow = 'hidden';
+
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
         } else {
             document.body.style.overflow = 'unset';
+            document.body.style.paddingRight = '0px';
         }
-
+    
         return () => {
             document.body.style.overflow = 'unset';
+            document.body.style.paddingRight = '0px';
         };
     }, [isMenuOpen]);
 
     const openResume = () => {
         window.open("/resume", "_blank");
         setIsMenuOpen(false);
-      };
+    };
 
-      const handleMenuNavigation = (path: string) => {
+    const handleMenuNavigation = (path: string) => {
         navigate(path);
         setIsMenuOpen(false);
     };
+    
     return (
         <>
-            {/* Main Navigation Bar */}
-            <div className="flex flex-row bg-white w-full lg:px-10 xl:px-20 py-6 justify-between items-center relative z-50 max-lg:px-6 max-md:py-4" id="nav">
+                <div className="flex flex-row bg-white w-full lg:px-10 xl:px-20 py-6 justify-between items-center relative z-50 max-lg:px-6 max-md:py-4" id="nav">
                 <div>
                     <img src={logo} width={70} alt="Logo" className="max-md:w-[60px]"/>
                 </div>
-
                 {/* Desktop Menu Links */}
-                <div className="flex gap-10 text-[#1F1F1F] text-[18px] max-lg:hidden">
-                    <span className="cursor-pointer" onClick={() => handleNavigation('home')}>
+                <div className="flex gap-10 text-[#1F1F1F] text-[18px] max-lg:hidden absolute left-1/2 -translate-x-1/2">
+                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('home')}>
                         HOME
                     </span>
-                    <span className="cursor-pointer" onClick={() => handleNavigation('portfolio')}>
+                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('portfolio')}>
                         PORTFOLIO
                     </span>
-                    <span className="cursor-pointer" onClick={() => handleNavigation('ai')}>
+                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('ai')}>
                         AI JOURNEY
                     </span>
-                    <span className="cursor-pointer" onClick={() => handleNavigation('teaching')}>
+                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('teaching')}>
                         TEACHING & MENTORSHIP
                     </span>
-                    <span className="cursor-pointer" onClick={() => handleNavigation('contact')}>
+                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('contact')}>
                         CONTACT ME
                     </span>
                 </div>
@@ -98,9 +103,9 @@ const NavBar: React.FC = () => {
                             <img src={logo} width={70} alt="Logo" className="max-md:w-[60px]"/>
                         </div>
                                     
-                        {/* Close Button */}
+                        {/* Close Button - Now matches hamburger positioning */}
                         <div 
-                            className="absolute right-20 max-xl:right-10 cursor-pointer text-4xl font-light max-lg:right-6"
+                            className="absolute right-20 max-xl:right-10 max-lg:right-6 cursor-pointer"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             <div className="w-9 h-[2.5px] bg-black rounded-xl max-md:w-7"></div>
