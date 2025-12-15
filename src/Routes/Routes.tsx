@@ -3,6 +3,7 @@ import AboutMe from "../features/AboutMe"
 import AIGenerativeDesign from "../features/AIGenerativeDesign"
 import BossCab from "../features/BossCab"
 import CliqMitCaseStudy from "../features/CliqMit"
+import Conversa from "../features/Conversa"
 import Home from "../features/Home"
 import KoboCaseStudy from "../features/Kobo"
 import Publications from "../features/Publications"
@@ -24,6 +25,10 @@ export const Routes = [
             {
                 path : "case-study/bosscab",
                 element : <BossCab/>
+               },
+               {
+                path : "case-study/conversa",
+                element : <Conversa/>
                },
                {
                 path : "about/me",

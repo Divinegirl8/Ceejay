@@ -103,16 +103,17 @@ const NavBar: React.FC = () => {
                             <img src={logo} width={70} alt="Logo" className="max-md:w-[60px]"/>
                         </div>
                                     
-                        {/* Close Button - Now matches hamburger positioning */}
+                        
+                       
                         <div 
-                            className="absolute right-20 max-xl:right-10 max-lg:right-6 cursor-pointer"
+                            className="absolute right-20 max-xl:right-10 max-lg:right-6 cursor-pointer p-6 -m-6"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             <div className="w-9 h-[2.5px] bg-black rounded-xl max-md:w-7"></div>
                         </div>
                     </div>
 
-                    {/* Menu Content - Made Scrollable */}
+                   
                     <div className="fixed top-[89px] left-0 right-0 bg-[#F5F5F5] w-full z-50 px-20 py-12 flex flex-row justify-evenly items-start gap-5 overflow-y-auto xl:max-h-[calc(100vh-89px)] max-lg:bottom-0 max-md:flex-col max-md:px-6 max-md:py-4 max-md:justify-start max-md:items-start max-md:top-[67px] max-md:h-full">
                         <div className="max-md:w-full">
                             {/* Menu Links - Desktop shows 3 items, Mobile shows all 8 */}
@@ -151,7 +152,7 @@ const NavBar: React.FC = () => {
 
                     {/* Backdrop Overlay */}
                     <div 
-                        className="fixed inset-0 z-40"
+                        className="fixed inset-0 z-40 "
                         style={{ backgroundColor: 'rgba(80, 80, 80, 0.45)' }}
                         onClick={() => setIsMenuOpen(false)}
                     />

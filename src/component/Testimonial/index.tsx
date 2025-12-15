@@ -4,12 +4,16 @@ import disableArrowIcon from "../../assets/new-portfolio/testimonial/Arrow (2).s
 import enableArrowIcon from "../../assets/new-portfolio/testimonial/blackarr.svg";
 import disablerArrowIcon from "../../assets/new-portfolio/testimonial/Arrow (3).svg";
 import enablerArrowIcon from "../../assets/new-portfolio/testimonial/rightarr.svg";
+import uzorPicture from "../../assets/new-portfolio/testimonial/Mask group (14).png";
+import copyAllIcon from "../../assets/new-portfolio/testimonial/Copy All.svg";
+import cliqmitIcon from "../../assets/new-portfolio/testimonial/Cliqmit.svg";
 
 interface Testimonial {
     text: string;
     name: string;
     title: string;
     avatar?: string;
+    
 }
 
 const Testimonial: React.FC = () => {
@@ -22,7 +26,8 @@ const Testimonial: React.FC = () => {
         {
             text: "Lucky transformed our vision into reality. His strategic approach to design didn't just solve user problems—it positioned CliqMit competitively in the market. He's a true product thinker who understands both users and business.",
             name: "Joshua Uzor",
-            title: "CEO, Cliqmit"
+            title: "CEO, Cliqmit",
+            avatar : uzorPicture
         },
         {
             text: "Another testimonial text goes here. This is just a placeholder for demonstration purposes.",
@@ -101,8 +106,19 @@ const Testimonial: React.FC = () => {
                             
                                 <div className="flex items-center gap-5 max-md:gap-3">
                                  
-                                    <div className="w-[70px] h-[70px] max-md:w-[50px] max-md:h-[50px] rounded-full bg-gray-300"></div>
-                                    
+                                <div className="w-[70px] h-[70px] max-md:w-[50px] max-md:h-[50px] rounded-full bg-gray-300 overflow-hidden">
+    {testimonials[currentIndex].avatar ? (
+        <img 
+            src={testimonials[currentIndex].avatar} 
+            alt={testimonials[currentIndex].name}
+            className="w-full h-full object-cover"
+        />
+    ) : (
+        <div className="w-full h-full flex items-center justify-center text-gray-500 text-2xl">
+            {testimonials[currentIndex].name.charAt(0)}
+        </div>
+    )}
+</div>
                                    
                                     <div className="flex flex-col">
                                         <span className="text-black text-[20px] max-md:text-[16px] font-semibold">
@@ -160,8 +176,8 @@ const Testimonial: React.FC = () => {
 
             <div className="grid grid-cols-4 xl:grid-cols-7 gap-[69px] py-20 mt-10 xl:justify-center xl:items-center max-md:hidden">
                 <img src={conservaIcon} alt="conversa"/>
-                <img src={conservaIcon} alt="conversa"/>
-                <img src={conservaIcon} alt="conversa"/>
+                <img src={copyAllIcon} alt="copyall"/>
+                <img src={cliqmitIcon} alt="cliqmit"/>
                 <img src={conservaIcon} alt="conversa"/>
                 <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
                 <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>

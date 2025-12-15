@@ -30,6 +30,7 @@ const Portfolio:React.FC = () =>{
                 imageSrc={cliq}
                 imageAlt="Cliq Mit app"
                 imageOnLeft={true}
+                projectUrl="case-study/cliqmit"
                 />
 
                 <ProjectCard
@@ -39,6 +40,7 @@ const Portfolio:React.FC = () =>{
                 imageSrc={kobo}
                 imageAlt="Kobo Connect app"
                 imageOnLeft={false}
+                  projectUrl="case-study/kobo"
                 />
                <ProjectCard
                 title="Bosscab Ride"
@@ -47,15 +49,17 @@ const Portfolio:React.FC = () =>{
                 imageSrc={bosscab}
                 imageAlt="Bosscab Ride app"
                 imageOnLeft={true}
+                  projectUrl="case-study/bosscab"
                 />
 
                 <ProjectCard
-                title="Synventory"
+                title="Conversa"
                 description="Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
                 imageSrc={synventory}
                 imageAlt="Synventory app"
                 imageOnLeft={false}
+                  projectUrl="case-study/conversa"
                 />
 
                
