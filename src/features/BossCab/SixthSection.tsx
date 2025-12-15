@@ -1,10 +1,9 @@
 import { useRef, useState, useEffect } from "react";
 import taskFlowImg from "../../assets/new-portfolio/boss-cab/sixth-section/Task flow 2 1.png";
 import userFlowImg from "../../assets/new-portfolio/boss-cab/sixth-section/User flow 1.png";
-import sketch from "../../assets/new-portfolio/boss-cab/sixth-section/Sketch.png";
-import sketch2 from "../../assets/new-portfolio/boss-cab/sixth-section/Sketch2.png";
-import sketch3 from "../../assets/new-portfolio/boss-cab/sixth-section/Sketch3.png";
-import sketch4 from "../../assets/new-portfolio/boss-cab/sixth-section/Sketch4.png";
+import sketch from "../../assets/new-portfolio/boss-cab/sixth-section/Sketches.png";
+
+
 
 const SixthSection: React.FC = () => {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -69,7 +68,7 @@ const SixthSection: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="xl:w-1/2 flex bg-[#171A23] relative xl:h-[700px] sm:h-[1390px] md:h-[800px] h-[800px]">
+                <div className="xl:w-1/2 flex bg-[#171A23] md:relative xl:h-[700px] md:h-[800px]  ">
             
                     <div className="md:absolute md:right-1 md:top-1/2 -translate-y-1/2 flex flex-col items-center z-10 md:h-[200px]">
                   
@@ -87,7 +86,7 @@ const SixthSection: React.FC = () => {
                   
                     <div
                         ref={scrollContainerRef}
-                        className="flex-1 md:overflow-y-auto md:px-10  md:py-20  py-10 md:scrollbar-hide"
+                        className="md:flex-1 md:overflow-y-auto md:px-10  md:py-20   md:scrollbar-hide"
                         style={{
                             scrollbarWidth: 'none', 
                             msOverflowStyle: 'none', 
@@ -98,15 +97,13 @@ const SixthSection: React.FC = () => {
                                 display: none; /* Chrome, Safari, Opera */
                             }
                         `}</style>
-                        <div className="flex flex-col gap-10 ">
-                            <img src={taskFlowImg} className="w-full px-7 sm:px-10 md:px-0" alt="Task Flow" />
-                            <img src={userFlowImg} className="w-full px-7 sm:px-10 md:px-0" alt="User Flow" />
-                            <div className="bg-[#0066FF] w-full xl:h-[380px] md:h-[600px] sm:h-[340px] h-[250px] gap-4 md:px-8 px-4 grid grid-cols-4 items-center  justify-center text-white">
+                        <div className="flex flex-col md:gap-10 ">
+                            <img src={taskFlowImg} className="w-full px-7 sm:px-10 md:px-0  max-sm:py-10" alt="Task Flow" />
+                            <img src={userFlowImg} className="w-full px-7 sm:px-10 md:px-0 max-sm:py-10" alt="User Flow" />
+                            <div >
                              
                                     <img src={sketch} />
-                                    <img src={sketch2}/>
-                                    <img src={sketch3}/>
-                                    <img src={sketch4}/>
+                                    
                             </div>
                         </div>
                     </div>

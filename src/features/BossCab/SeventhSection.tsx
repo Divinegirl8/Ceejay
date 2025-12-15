@@ -7,11 +7,11 @@ const SeventhSection : React.FC = () => {
         
         <div className="xl:border-t  border-[#5A5A5A] flex xl:flex-row flex-col-reverse">
 
-        <div className="xl:w-1/2 xl:flex sm:py-16 py-10 md:py-20 xl:py-0 justify-center items-center px-10 bg-[#171A23]  ">
+        <div className="xl:w-1/2 xl:flex sm:py-16 py-10 md:py-20 xl:py-0 md:justify-center md:items-center px-10 bg-[#171A23]  ">
           <img src={painPointImg} className=""/>
        </div>
        
-        <div className="xl:w-1/2  border-[#5A5A5A] xl:border-r xl:px-20 lg:px-10 px-7 md:py-20 py-10 max-sm:pt-30  bg-[#FBFBFB]">
+        <div className="xl:w-1/2  border-[#5A5A5A] xl:border-r xl:px-20 lg:px-10 px-7 md:py-20 py-10  bg-[#FBFBFB]">
             <h1 className="text-[#000000] md:text-[32px] text-[25px] md:text-center font-medium md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
             Solving Usability Bugs
             </h1>
