@@ -3,29 +3,35 @@ import mysteryImage from "../../assets/new-portfolio/ai/Mask group (15).png";
 import castleImage from "../../assets/new-portfolio/ai/IMG_6333 1.png";
 import roadImage from "../../assets/new-portfolio/ai/2 27.png"
 import Form from '../../component/Form';
+import { useNavigate } from 'react-router-dom';
 
 const AIGenerativeDesign: React.FC = () => {
+  const navigate = useNavigate();
+
   const designs = [
     {
       id: 1,
       image: mysteryImage,
       title: 'AI-generated character concepts for games, films, and storytelling.',
       photoCount: '10 Photos',
-      tag : "Characters"
+      tag : "Characters",
+      path : "/ai/generative/characters"
     },
     {
       id: 2,
       image: castleImage,
       title: 'Concept art for game levels, film sets, and immersive worlds.',
       photoCount: '07 Photos',
-      tag : "Environments"
+      tag : "Environments",
+      path : "/ai/generative/characters"
     },
     {
       id: 3,
       image: roadImage,
       title: 'AI-generated video content including animated ads, motion graphics, character animations, and atmospheric sequences.',
       photoCount: '04 Videos',
-      tag : "Videos"
+      tag : "Videos",
+      path : "/ai/generative/characters"
     }
   ];
 
@@ -42,7 +48,7 @@ const AIGenerativeDesign: React.FC = () => {
       {/* Design Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {designs.map((design) => (
-          <div key={design.id}>
+          <div key={design.id} onClick={()=> navigate(design.path)}>
             {/* Desktop Version - Hover Effect */}
             <div 
               className="relative hidden xl:block group cursor-pointer overflow-hidden bg-gray-900"

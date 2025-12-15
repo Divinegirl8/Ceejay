@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import arrow from "../../assets/new-portfolio/aijourney/Arrow 1 (2).svg";
 import warrow from "../../assets/new-portfolio/aijourney/whitearr.svg";
 import line from "../../assets/new-portfolio/aijourney/Line.svg";
+import mysteryImage from "../../assets/new-portfolio/ai/Mask group (15).png";
 
 const AiJourney = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const AiJourney = () => {
       title: "Generative Design",
       description: "Explored AI image generation to create hyper-realistic game characters, cinematic scenes, and motion graphics, blending human imagination with machine precision.",
       maxW: "max-w-[650px]",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
+      image: mysteryImage,
       link : "ai/generative/designs"
     },
     {
@@ -108,7 +109,7 @@ const AiJourney = () => {
               className={`flex lg:flex-row flex-col lg:justify-between lg:items-center md:mt-5 lg:mt-0 px-7 max-md:py-5 lg:px-10 xl:px-20 relative transition-colors duration-300 z-10 min-h-[170px] cursor-pointer ${
                 hoveredItem === item.id ? 'bg-[#15181C] lg:cursor-none' : ''
               }`}
-              onClick={() => handleClick(item.link)} // Click on entire div for both desktop and mobile
+              onClick={() => handleClick(item.link)}
               onMouseEnter={() => {
                 setHoveredItem(item.id);
                 setShowImage(true);
@@ -166,7 +167,7 @@ const AiJourney = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-[160px] h-full object-cover rounded-lg shadow-2xl"
+                    className="w-[160px] h-full  rounded-lg shadow-2xl"
                   />
                 </div>
               )}

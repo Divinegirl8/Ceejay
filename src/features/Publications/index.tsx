@@ -109,9 +109,14 @@ const Publications: React.FC = () => {
   // Get visible publications based on count
   const visiblePublications = filteredPublications.slice(0, visibleCount);
   const hasMore = visibleCount < filteredPublications.length;
+  const showingAll = visibleCount >= filteredPublications.length && filteredPublications.length > 6;
 
   const handleLoadMore = () => {
     setVisibleCount(prev => prev + 6);
+  };
+
+  const handleShowLess = () => {
+    setVisibleCount(6);
   };
 
   const handleTabChange = (tab: TabType) => {
@@ -154,7 +159,7 @@ const Publications: React.FC = () => {
       {/* Publications Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {visiblePublications.map((pub) => (
-          <div key={pub.id} className="overflow-hidden transition-shadow">
+          <div key={pub.id} className="group overflow-hidden transition-shadow cursor-pointer">
             {/* Image Section */}
             <div className="relative overflow-hidden w-full">
                 <img 
@@ -181,24 +186,24 @@ const Publications: React.FC = () => {
               <p className="text-sm text-gray-600 mb-2 line-clamp-2">
                 {pub.description}
               </p>
-              <button className="group flex items-center gap-2 text-[14px] font-[700] text-black hover:text-[#238EFF] cursor-pointer transition-colors">
+              <div className="flex items-center gap-2 text-[14px] font-[700] text-black group-hover:text-[#238EFF] transition-colors">
                 Read post
                 <img src={blackArrowIcon} className='group-hover:hidden'/>
                 <img src={blueArrowIcon} className='hidden group-hover:block'/>
-                </button>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Load More Button */}
-      {hasMore && (
+      {/* Load More / Show Less Button */}
+      {(hasMore || showingAll) && (
         <div className="flex justify-center mt-20">
           <button 
-            onClick={handleLoadMore}
-            className="w-full  py-8 border-1 border-[#9CA0A4] text-black font-semibold text-[16px] hover:bg-gray-100 transition-colors"
+            onClick={showingAll ? handleShowLess : handleLoadMore}
+            className="w-full py-8 border-1 border-[#9CA0A4] text-black font-semibold text-[16px] hover:bg-gray-100 transition-colors"
           >
-            Load More
+            {showingAll ? 'Show Less' : 'Load More'}
           </button>
         </div>
       )}

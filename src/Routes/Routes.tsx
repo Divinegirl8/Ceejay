@@ -1,3 +1,4 @@
+import Characters from "../component/Characters"
 import ResumeViewer from "../component/ResumeViewer"
 import AboutMe from "../features/AboutMe"
 import AIGenerativeDesign from "../features/AIGenerativeDesign"
@@ -41,7 +42,8 @@ export const Routes = [
                {
                 path : "ai/generative/designs",
                 element : <AIGenerativeDesign/>
-               }
+               },
+             
         ]},
         {
             path : "/",
@@ -50,7 +52,11 @@ export const Routes = [
         {
             path: "/resume",
             element: <ResumeViewer />
-          }
+          },
+          {
+            path : "ai/generative/characters",
+            element : <Characters/>
+           }
           
     
 ]
