@@ -122,7 +122,7 @@ const Publications: React.FC = () => {
   return (
     <>
     
-    <div className="xl:px-[8.5rem] lg:px-10 px-7 md:py-30 py-10">
+    <div className="xl:px-[8.5rem] lg:px-10 px-7 md:py-30 py-10 max-md:bg-[#F3F3F3]">
       {/* Header */}
       <div className="mb-12">
         <h2 className="md:text-[35px] text-[25px] font-semibold text-black mb-4">Publications.</h2>

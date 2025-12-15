@@ -15,7 +15,7 @@ const AboutMe : React.FC = () =>{
     return(
         <>
         
-       <div className="xl:px-[8.5rem] lg:px-10 px-7 md:py-30 py-10">
+       <div className="xl:px-[8.5rem] lg:px-10 px-7 md:py-30 py-10 max-md:bg-[#F3F3F3]">
 
             <div className="flex flex-col md:gap-3">
                     <h3 className="font-semibold md:text-[35px] text-[25px] text-[#000000]">About Me.</h3>
@@ -27,11 +27,11 @@ const AboutMe : React.FC = () =>{
                         <img src={luckyImg} alt="luckyImg" className="w-full h-full md:object-cover"/>
                     </div>
                     <div className="flex-1">
-                        <div className="w-full h-full bg-[#F4F4F4] md:px-10 px-5 py-10 flex flex-col">
+                        <div className="w-full h-full md:bg-[#F4F4F4] md:px-10 md:py-10 flex flex-col">
                             <h4 className="text-[30px] text-black font-semibold">Lucky Ekezie</h4>
                             <p className="text-[16px] font-[500] text-[#626262]">AI-Driven Product Design Leader</p>
 
-                            <div className="mt-10 flex-1 overflow-y-auto text-[16px]">
+                            <div className="md:mt-10 mt-5 flex-1 overflow-y-auto text-[16px]">
                                 <p className="mb-4">
                                     I am a product designer and technology entrepreneur focused on building intelligent,
                                     human-centered solutions for everyday problems. Over the years, I've worked across
@@ -72,20 +72,20 @@ const AboutMe : React.FC = () =>{
             <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:gap-30 md:items-center md:mt-16 mt-5">
                 <div className="relative">
                     <h4 className="font-[800] md:text-[64px] text-[40px] ">08+</h4>
-                    <p className="font-normal md:text-[18px] text-[16px] text-[#626262] w-[14rem]">Years of Creative & Product Design Experience</p>
+                    <p className="font-normal md:text-[18px] text-[16px] text-[#626262] md:w-[14rem]">Years of Creative & Product Design Experience</p>
              
                     <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[1px] h-[40px] bg-[#D4D4D4] md:block hidden"></div>
                 </div>
 
                 <div className="relative">
                     <h4 className="font-[800] md:text-[64px] text-[40px]">30+</h4>
-                    <p className="font-normal md:text-[18px] text-[16px] text-[#626262] w-[17rem]">Projects designed across fintech, mobility, gaming & media</p>
+                    <p className="font-normal md:text-[18px] text-[16px] text-[#626262] md:w-[17rem]">Projects designed across fintech, mobility, gaming & media</p>
                     <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[1px] h-[40px] bg-[#D4D4D4] xl:block hidden"></div>
                 </div>
 
                 <div>
                     <h4 className="font-[800] md:text-[64px] text-[40px]">15+</h4>
-                    <p className="font-normal md:text-[18px] text-[16px]  text-[#626262] w-[16rem]">Products designed, improved, or contributed to</p>
+                    <p className="font-normal md:text-[18px] text-[16px]  text-[#626262] md:w-[16rem]">Products designed, improved, or contributed to</p>
                 </div>
             </div>
 
@@ -96,8 +96,8 @@ const AboutMe : React.FC = () =>{
 
                {/* skills */}
 
-                    <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-x-4  md:gap-y-5 gap-y-3 md:mt-12 mt-5">
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                    <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-x-4  md:gap-y-5 gap-y-3 md:mt-12 mt-5">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#E9F4FF] rounded-full items-center justify-center flex">
                             <img src={cpuIcon} alt="cpuIcon" className="w-5 h-5" />
                             </div>
@@ -106,7 +106,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#EAF9EE] rounded-full items-center justify-center flex">
                             <img src={chartIcon} alt="chartIcon" className="w-5 h-5" />
                             </div>
@@ -115,7 +115,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#FFF3EC] rounded-full items-center justify-center flex">
                             <img src={penIcon} alt="penIcon" className="w-5 h-5" />
                             </div>
@@ -124,7 +124,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#F2EFFF] rounded-full items-center justify-center flex">
                             <img src={toolIcon} alt="toolIcon" className="w-5 h-5" />
                             </div>
@@ -133,7 +133,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#E8F6F6] rounded-full items-center justify-center flex">
                             <img src={bezeirToolIcon} alt="bezeirToolIcon" className="w-5 h-5" />
                             </div>
@@ -142,7 +142,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#FEFAED] rounded-full items-center justify-center flex">
                             <img src={statusIcon} alt="statusIcon" className="w-5 h-5" />
                             </div>
@@ -151,7 +151,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#FFEEEF] rounded-full items-center justify-center flex">
                             <img src={monitorIcon} alt="monitorIcon" className="w-5 h-5" />
                             </div>
@@ -160,7 +160,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#E5E8EB] rounded-full items-center justify-center flex">
                             <img src={trendIcon} alt="trendIcon" className="w-5 h-5" />
                             </div>
@@ -169,7 +169,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#F4F6F8] rounded-full items-center justify-center flex">
                             <img src={userIcon} alt="userIcon" className="w-5 h-5" />
                             </div>
@@ -178,7 +178,7 @@ const AboutMe : React.FC = () =>{
                             </div>
                         </div>
 
-                        <div className="bg-[#FFFFFF] max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
+                        <div className="bg-[#FFFFFF] md:max-w-[230px] h-[130px] flex flex-col px-4 pt-4 gap-2 items-start">
                             <div className="h-[40px] w-[40px] bg-[#EFF0FE] rounded-full items-center justify-center flex">
                             <img src={peopleIcon} alt="peopleIcon" className="w-5 h-5" />
                             </div>

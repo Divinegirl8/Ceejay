@@ -6,6 +6,8 @@ const FirstSection: React.FC = () => {
         <>
        <div className="hidden xl:block">
 
+     
+
 <div className="border-t border-[#5A5A5A] flex flex-row justify-between bg-[#F5F5F5]">
        
        <div className="flex-1 border-r border-[#5A5A5A] flex px-20 items-center  py-20">
@@ -19,7 +21,7 @@ const FirstSection: React.FC = () => {
            <img 
                src={roadPicture} 
                alt="City skyline illustration"
-               className="h-[200px] object-contain"
+               className="h-[200px] w-[800px]"
            />
        </div>
 

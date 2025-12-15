@@ -40,7 +40,7 @@ const Hero : React.FC = () => {
                     <div className={`flex flex-col items-center xl:mt-14 mt-14 md:mt-5`}>
                         <div className={`${style.animateSlowBounce} cursor-pointer`} onClick={() => scrollToSection('nav')}><img src={arrowIcon} alt="Scroll down"/></div>
                     
-                        <span className="text-[#DEDEDE] text-[14px] mt-2 ">SCROLL UP</span>
+                        <span className="text-[#DEDEDE] text-[14px] mt-2 cursor-pointer" onClick={() => scrollToSection('nav')}>SCROLL UP</span>
                     </div>
                 </div>
             </div>

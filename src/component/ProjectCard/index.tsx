@@ -47,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* Custom Cursor - only on desktop */}
       {isHovering && (
         <div
-          className="hidden md:block fixed pointer-events-none z-50 w-20 h-20 border-2 bg-[#001737] rounded-full transition-transform duration-200 ease-out"
+          className="hidden md:block fixed pointer-events-none z-50 w-20 h-20  bg-[#001737] rounded-full transition-transform duration-200 ease-out"
           style={{
             left: `${cursorPosition.x}px`,
             top: `${cursorPosition.y}px`,
