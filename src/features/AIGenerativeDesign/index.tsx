@@ -23,7 +23,7 @@ const AIGenerativeDesign: React.FC = () => {
       title: 'Concept art for game levels, film sets, and immersive worlds.',
       photoCount: '07 Photos',
       tag : "Environments",
-      path : "/ai/generative/characters"
+      path : "/ai/generative/environments"
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const AIGenerativeDesign: React.FC = () => {
       title: 'AI-generated video content including animated ads, motion graphics, character animations, and atmospheric sequences.',
       photoCount: '04 Videos',
       tag : "Videos",
-      path : "/ai/generative/characters"
+      path : "/ai/generative/videos"
     }
   ];
 

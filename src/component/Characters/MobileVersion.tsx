@@ -117,7 +117,7 @@ const MobileVersion: React.FC = () => {
                         <img
                             src={images[selectedImage].src}
                             alt={images[selectedImage].title}
-                            className="w-full aspect-square object-cover rounded-lg shadow-2xl"
+                            className="w-full aspect-square object-cover "
                         />
                     </div>
 
@@ -137,7 +137,7 @@ const MobileVersion: React.FC = () => {
                                 key={image.id}
                                 ref={(el) => { thumbnailRefs.current[index] = el; }}
                                 onClick={() => handleImageClick(index)}
-                                className={`flex-shrink-0 overflow-hidden rounded-md transition-all cursor-pointer ${
+                                className={`flex-shrink-0 overflow-hidden  transition-all cursor-pointer ${
                                     selectedImage === index ? 'border-[#238EFF] border-t-2' : 'border-white/30 opacity-60 hover:opacity-100'
                                 }`}
                             >

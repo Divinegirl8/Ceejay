@@ -1,5 +1,7 @@
 import Characters from "../component/Characters"
+import Environment from "../component/Environments"
 import ResumeViewer from "../component/ResumeViewer"
+import Videos from "../component/Videos"
 import AboutMe from "../features/AboutMe"
 import AIGenerativeDesign from "../features/AIGenerativeDesign"
 import BossCab from "../features/BossCab"
@@ -56,6 +58,14 @@ export const Routes = [
           {
             path : "ai/generative/characters",
             element : <Characters/>
+           },
+           {
+            path : "ai/generative/environments",
+            element : <Environment/>
+           },
+           {
+            path : "ai/generative/videos",
+            element : <Videos/>
            }
           
     
