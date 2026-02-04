@@ -50,7 +50,7 @@ const FourthSection : React.FC = () => {
 
 
        <div className="xl:w-1/2">
-          <img src={sketchImage} className=""/>
+          <img src={sketchImage} className="w-full h-full object-cover"/>
        </div>
     </div>
 

@@ -1,14 +1,25 @@
-import secondImage from "../../assets/new-portfolio/conversa/first-section/Rectangle 17.png";
-import orangeImage from "../../assets/new-portfolio/conversa/first-section/Rectangle 25.png";
-import ashImage from "../../assets/new-portfolio/conversa/first-section/Rectangle 28.png";
+import secondImage from "../../assets/new-portfolio/conversa/first-section/1 (8).png";
+import orangeImage from "../../assets/new-portfolio/conversa/first-section/2 (9).png";
+import ashImage from "../../assets/new-portfolio/conversa/first-section/3 (6).png";
 
 
 const FirstSection: React.FC = () => {
     return (
         <>
-          <div className="md:border-t border-[#5A5A5A] flex flex-col xl:flex-row ">
+          <div className="xl:border-t md:border-b  border-[#5A5A5A] flex flex-col xl:flex-row ">
+
+             <div className="xl:hidden md:px-10 md:py-16 px-7  border-b border-[#5A5A5A] relative ">
+                      
+                        <button className="absolute -bottom-[26px] max-lg:right-16  px-8 py-3 border border-[#5A5A5A] bg-white rounded-full text-base hover:bg-gray-50 transition-colors inline-flex items-center gap-2">
+                            Visit Website 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#1E1E1E"/>
+                            </svg>
+                        </button>
+                    </div>
+
               
-              <div className="xl:w-1/2  border-r border-[#5A5A5A] flex flex-col">
+              <div className="lg:xl:w-1/2  lg:border-r lg:border-[#5A5A5A] flex flex-col">
                  
               <div className="xl:px-16  px-7  flex-1">
                       <h2 className="text-[#000000] md:text-[32px] text-[25px] md:text-center font-[500] md:mb-6 pt-16">
@@ -37,29 +48,33 @@ const FirstSection: React.FC = () => {
                       </div>
               </div>
 
-              <div className="flex flex-row gap-10 py-10 justify-center">
-                <img src={orangeImage} alt="picture one"  className="w-[280px]"/>
-                <img src={ashImage} alt="picture two" className="w-[280px]"/>
-              </div>
+              <div className="flex xl:flex-row flex-col lg:gap-10  justify-center max-md:items-center ">
+                <div className="md:flex-row md:flex justify-center gap-10">
+                    <img src={orangeImage} alt="picture one" className="w-[280px] h-[350px] rounded-2xl lg:mt-7 mt-8 object-cover"/>
+              <img src={ashImage} alt="picture two" className="w-[280px] h-[420px] object-cover"/>    
+                </div>
+              <img src={secondImage} className=" xl:hidden -mt-9"/>
+                   
+            </div>
 
                   
                 
               </div>
 
-              <div className="xl:w-1/2 ">
+              <div className="xl:w-1/2 xl:block hidden">
                     <div className="flex flex-row justify-evenly items-stretch gap-8 ">
-                    <div className=" border-r border-[#5A5A5A] flex flex-col">
+                    <div className=" lg:border-r border-[#5A5A5A] flex flex-col">
                  
-                 <div className="border-b  max-lg:px-7 lg:px-10 md:py-10 border-[#5A5A5A] relative ">
+                 <div className="border-b  max-lg:px-7 lg:px-10 md:py-10 border-[#5A5A5A] lg:relative ">
                          
-                         <div className="flex flex-col space-y-2 py-10 text-[21px]">
+                         <div className="lg:flex flex-col space-y-2 py-10 text-[21px] hidden">
                             <span><span className="font-bold">My Role:</span> Founder & Lead Product Designer</span>
                             <span><span className="font-bold">Timeline:</span> June 2025 - Present</span>
                             <span><span className="font-bold">Platform:</span> Web Dashboard, Voice API, Mobile (iOS/Android)</span>
                             <span><span className="font-bold">Tools:</span> Figma, Voiceflow, Cursor AI, Midjourney</span>
                          </div>
                          
-                         <button className="absolute -bottom-[26px]  px-8 py-3 border border-[#5A5A5A] bg-white rounded-full text-base hover:bg-gray-50 transition-colors inline-flex items-center gap-2 cursor-pointer">
+                         <button className="lg:absolute lg:-bottom-[26px]  px-8 py-3 border border-[#5A5A5A] bg-white rounded-full text-base hover:bg-gray-50 transition-colors lg:inline-flex items-center gap-2 cursor-pointer  hidden">
                               For More Details
                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                              <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#1E1E1E"/>
@@ -68,10 +83,10 @@ const FirstSection: React.FC = () => {
                      </div>
    
                      
-                     <div className="xl:px-16  px-7 md:py-20 py-10 flex-1 ">
+                     <div className="py-10 lg:flex-1 hidden lg:block ">
                          
                          
-                        <img src={secondImage}/>
+                        <img src={secondImage} className="w-[695px] h-[519.5859375px]"/>
                      </div>
                  </div>
 

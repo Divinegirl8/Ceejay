@@ -1,4 +1,11 @@
+import Conversation from "./Conversation";
+import EightSection from "./EightSection";
 import FirstSection from "./FirstSection";
+import FourthSection from "./FourthSection";
+import LastSection from "./LastSection";
+import NinthSection from "./NinthSection";
+import SecondSection from "./SecondSection";
+import ThirdSection from "./ThirdSection";
 
 const Conversa  : React.FC = () => {
     return (
@@ -14,6 +21,13 @@ const Conversa  : React.FC = () => {
           </div>
 
           <FirstSection/>
+          <SecondSection/>
+          <ThirdSection/>
+          <FourthSection/>
+          <Conversation/>
+          <EightSection/>
+          <NinthSection/>
+          <LastSection/>
         </>
     )
 }

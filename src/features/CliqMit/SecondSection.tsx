@@ -6,7 +6,7 @@ const SecondSection : React.FC = () => {
         <div className="flex md:flex-row flex-col justify-between">
 
          
-            <div className="xl:px-16 md:px-10 px-7 md:py-16 py-10 flex-1 bg-[#FBFBFB]">
+            <div className="xl:px-16 md:px-10 px-7 md:pt-16  flex-1 bg-[#FBFBFB]">
                 <h2 className="text-[#000000] text-[25px] md:text-[32px] md:text-center font-medium md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
                     Design Process
                 </h2>

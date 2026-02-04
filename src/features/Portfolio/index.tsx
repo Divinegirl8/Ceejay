@@ -1,7 +1,7 @@
 import ProjectCard from "../../component/ProjectCard";
 import cliq from "../../assets/new-portfolio/portfolio/cliqmit.png";
 import kobo from "../../assets/new-portfolio/portfolio/ks.png";
-import synventory from "../../assets/new-portfolio/portfolio/bosscab.png"
+import conversa from "../../assets/new-portfolio/portfolio/2 (10).png"
 import bosscab from "../../assets/new-portfolio/portfolio/bc.png";
 
 const Portfolio:React.FC = () =>{
@@ -54,10 +54,15 @@ const Portfolio:React.FC = () =>{
 
                 <ProjectCard
                 title="Conversa"
-                description="Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada."
+                description="Conversa is a healthcare-focused AI voice and chat
+                              platform built to streamline patient communication.
+                              Designed with clinical workflows in mind, it enables
+                              compliant automation for scheduling, follow-ups,
+                              and patient support—reducing admin load and
+                              improving care experiences."
                 tags={["USER INTERVIEWS", "DESIGN THINKING", "UI DESIGN", "UX DESIGN", "PROTOTYPING"]}
-                imageSrc={synventory}
-                imageAlt="Synventory app"
+                imageSrc={conversa}
+                imageAlt="Conversa app"
                 imageOnLeft={false}
                   projectUrl="case-study/conversa"
                 />
