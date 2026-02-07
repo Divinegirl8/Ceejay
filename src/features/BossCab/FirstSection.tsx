@@ -17,13 +17,22 @@ const FirstSection: React.FC = () => {
            </h1>
        </div>
      
-       <div className="flex-1  flex items-center justify-center  py-20 px-20">
+       <div className="flex-1  flex items-center justify-center  py-20 px-20 relative">
            <img 
                src={roadPicture} 
                alt="City skyline illustration"
                className="h-[200px] w-[800px]"
            />
+           {/* Visit Website Button */}
+           <button className="absolute -bottom-[26px] right-20 px-8 py-3 border border-[#5A5A5A] bg-white rounded-full text-base hover:bg-gray-50 transition-colors inline-flex items-center gap-2 cursor-pointer"  onClick={() => window.open('https://apps.apple.com/ng/app/bosscab/id1592402611', '_blank')}>
+               Visit Website 
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#1E1E1E"/>
+               </svg>
+           </button>
        </div>
+
+       
 
     
        <div className="flex items-center justify-center px-[21.5px]">
@@ -42,6 +51,8 @@ const FirstSection: React.FC = () => {
        <div className="flex-1 border-r border-[#5A5A5A] flex px-20 items-center  py-22">
            <img src={maskPicture}/>
        </div>
+
+       
      
        <div className="flex-1 px-20 py-22 flex flex-col justify-center pt-20">
                         <h2 className="text-[#000000] text-[40px] font-normal mb-8 text-center">
@@ -94,7 +105,7 @@ const FirstSection: React.FC = () => {
                    
                 <div className="border-b xl:px-20 max-lg:px-7 lg:px-10 md:py-10 border-[#5A5A5A] relative ">
                        
-                        <button className="absolute -bottom-[26px] right-16 px-8 py-3 border border-[#5A5A5A] bg-white rounded-full text-base hover:bg-gray-50 transition-colors inline-flex items-center gap-2">
+                        <button className="absolute -bottom-[26px] right-16 px-8 py-3 border border-[#5A5A5A] bg-white rounded-full text-base hover:bg-gray-50 transition-colors inline-flex items-center gap-2 cursor-pointer"  onClick={() => window.open('https://apps.apple.com/ng/app/bosscab/id1592402611', '_blank')}>
                             Visit Website 
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6V8H14.59L5 17.59L6.41 19L16 9.41V18H18V6H6Z" fill="#1E1E1E"/>
@@ -110,7 +121,7 @@ const FirstSection: React.FC = () => {
                         
                         <div className="space-y-4 text-[#5A5A5A] text-base leading-relaxed">
                             <p>
-                                 Bosscab is a ride-hailing app connecting private drivers and riders across multiple locations. As the company prepared to scale, it aimed to attract more users by offering a friendlier, fairer alternative in the rideshare space. The project focused on improving the app’s information architecture and enhancing key rider experiences— payments, wallet transfers, and ride security. I redesigned Bosscab with these goals in mind to support growth and encourage more people to ride or drive with confidence.   
+                                 Bosscab is a ride-hailing app connecting private drivers and riders across multiple locations. As the company prepared to scale, it aimed to attract more users by offering a friendlier, fairer alternative in the rideshare space. The project focused on improving the app's information architecture and enhancing key rider experiences— payments, wallet transfers, and ride security. I redesigned Bosscab with these goals in mind to support growth and encourage more people to ride or drive with confidence.   
                            </p>
                             
                            

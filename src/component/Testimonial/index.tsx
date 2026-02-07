@@ -5,8 +5,15 @@ import enableArrowIcon from "../../assets/new-portfolio/testimonial/blackarr.svg
 import disablerArrowIcon from "../../assets/new-portfolio/testimonial/Arrow (3).svg";
 import enablerArrowIcon from "../../assets/new-portfolio/testimonial/rightarr.svg";
 import uzorPicture from "../../assets/new-portfolio/testimonial/Mask group (14).png";
+import ugi from "../../assets/new-portfolio/testimonial/Mask group (18).png";
 import copyAllIcon from "../../assets/new-portfolio/testimonial/Copy All.svg";
 import cliqmitIcon from "../../assets/new-portfolio/testimonial/Cliqmit.svg";
+import koboIcon from "../../assets/new-portfolio/testimonial/Kobo.svg";
+import bosscabIcon from "../../assets/new-portfolio/testimonial/Bosscab.svg";
+import clxIcon from "../../assets/new-portfolio/testimonial/CLx.svg";
+import syncventoryIcon from "../../assets/new-portfolio/testimonial/Syncventory.svg";
+import nasImage from "../../assets/new-portfolio/testimonial/Mask group (19).png";
+import style from "./index.module.css";
 
 interface Testimonial {
     text: string;
@@ -30,14 +37,16 @@ const Testimonial: React.FC = () => {
             avatar : uzorPicture
         },
         {
-            text: "Another testimonial text goes here. This is just a placeholder for demonstration purposes.",
-            name: "John Doe",
-            title: "Creative Director"
+            text: "Lucky played a critical role in shaping Kobo into a scalable fintech product. He combines deep user insight with strong technical and business understanding, translating complexity into clear, effective design decisions that directly improved adoption and execution.",
+            name: "Nasir",
+            title: "CTO, Kobo Connect",
+            avatar : nasImage
         },
         {
-            text: "Lorem ipsum dolor sit amet, consectetur adipi elit. Quisque cursus leo in euismod imperdiet. Curabitur rhoncus sit amet lorem in feugiat. Phasellus consec tetur eget nibh a gravida. Proin pulvinar dolor a odio ultricies malesuada.",
-            name: "Daniel Oku",
-            title: "Human Resource Manager"
+            text: "Lucky was instrumental in redefining Bosscab’s product experience. His ability to balance user needs, technical constraints, and business goals helped position the platform as a more accessible and scalable mobility solution.",
+            name: "Ugi Augustine Ugi",
+            title: "President, Nugi Group",
+            avatar : ugi
         },
     ];
 
@@ -174,23 +183,53 @@ const Testimonial: React.FC = () => {
 
 
 
-            <div className="grid grid-cols-4 xl:grid-cols-7 gap-[69px] py-20 mt-10 xl:justify-center xl:items-center max-md:hidden">
-                <img src={conservaIcon} alt="conversa"/>
-                <img src={copyAllIcon} alt="copyall"/>
-                <img src={cliqmitIcon} alt="cliqmit"/>
-                <img src={conservaIcon} alt="conversa"/>
-                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
-                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
-                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
-                
-                <img src={conservaIcon} alt="conversa"/>
-                <img src={conservaIcon} alt="conversa"/>
-                <img src={conservaIcon} alt="conversa"/>
-                <img src={conservaIcon} alt="conversa"/>
-                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
-                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
-                <img src={conservaIcon} alt="conversa" className="max-xl:hidden"/>
-            </div>
+        <div className="py-20 mt-10 max-md:hidden overflow-hidden">
+  {/* First row - scrolling left */}
+  <div className={`${style["animate-scroll-left"]} flex gap-[69px] mb-10`}>
+    <img src={conservaIcon} alt="conversa" className="flex-shrink-0"/>
+    <img src={copyAllIcon} alt="copyall" className="flex-shrink-0"/>
+    <img src={cliqmitIcon} alt="cliqmit" className="flex-shrink-0"/>
+    <img src={koboIcon} alt="kobo" className="flex-shrink-0"/>
+    <img src={bosscabIcon} alt="bosscab" className="flex-shrink-0"/>
+    <img src={clxIcon} alt="clx" className="flex-shrink-0"/>
+    <img src={syncventoryIcon} alt="syncventory" className="flex-shrink-0"/>
+    <img src={conservaIcon} alt="conversa" className="flex-shrink-0"/>
+    <img src={copyAllIcon} alt="copyall" className="flex-shrink-0"/>
+    <img src={cliqmitIcon} alt="cliqmit" className="flex-shrink-0"/>
+    {/* Duplicate for seamless loop */}
+    <img src={conservaIcon} alt="conversa" className="flex-shrink-0"/>
+    <img src={copyAllIcon} alt="copyall" className="flex-shrink-0"/>
+    <img src={cliqmitIcon} alt="cliqmit" className="flex-shrink-0"/>
+    <img src={koboIcon} alt="kobo" className="flex-shrink-0"/>
+    <img src={bosscabIcon} alt="bosscab" className="flex-shrink-0"/>
+    <img src={clxIcon} alt="clx" className="flex-shrink-0"/>
+    <img src={syncventoryIcon} alt="syncventory" className="flex-shrink-0"/>
+    <img src={conservaIcon} alt="conversa" className="flex-shrink-0"/>
+    <img src={copyAllIcon} alt="copyall" className="flex-shrink-0"/>
+    <img src={cliqmitIcon} alt="cliqmit" className="flex-shrink-0"/>
+  </div>
+
+  {/* Second row - scrolling right */}
+  <div className={`${style["animate-scroll-right"]} flex gap-[69px]`}>
+    <img src={cliqmitIcon} alt="cliqmit" className="flex-shrink-0"/>
+    <img src={syncventoryIcon} alt="syncventory" className="flex-shrink-0"/>
+    <img src={conservaIcon} alt="conversa" className="flex-shrink-0"/>
+    <img src={copyAllIcon} alt="copyall" className="flex-shrink-0"/>
+    <img src={koboIcon} alt="kobo" className="flex-shrink-0"/>
+    <img src={bosscabIcon} alt="bosscab" className="flex-shrink-0"/>
+    <img src={clxIcon} alt="clx" className="flex-shrink-0"/>
+    <img src={koboIcon} alt="kobo" className="flex-shrink-0"/>
+    {/* Duplicate for seamless loop */}
+    <img src={cliqmitIcon} alt="cliqmit" className="flex-shrink-0"/>
+    <img src={syncventoryIcon} alt="syncventory" className="flex-shrink-0"/>
+    <img src={conservaIcon} alt="conversa" className="flex-shrink-0"/>
+    <img src={copyAllIcon} alt="copyall" className="flex-shrink-0"/>
+    <img src={koboIcon} alt="kobo" className="flex-shrink-0"/>
+    <img src={bosscabIcon} alt="bosscab" className="flex-shrink-0"/>
+    <img src={clxIcon} alt="clx" className="flex-shrink-0"/>
+    <img src={koboIcon} alt="kobo" className="flex-shrink-0"/>
+  </div>
+</div>
             </div>
         </>
     );
