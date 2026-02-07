@@ -20,25 +20,25 @@ const EightSection : React.FC = () => {
 
                     
                     <p className="text-[#5A5A5A] text-[16px] leading-relaxed flex flex-col ">
-                       <span className="font-[500]">Clarity Over Complexity</span> 
+                       <span className="font-[500] text-black">Clarity Over Complexity</span> 
                             Every interface element serves a clear purpose. Healthcare staff need to
                             configure assistants quickly without extensive training.
                     </p>
 
                     <p className="text-[#5A5A5A] text-[16px] leading-relaxed mt-5 flex flex-col ">
-                      <span className="font-[500]">Trust Through Transparency</span> 
+                      <span className="font-[500] text-black">Trust Through Transparency</span> 
                             All AI actions are visible and auditable. Call transcripts, decision-making
                             logic, and escalation reasons are always accessible.            
                     </p>
 
                     <p className="text-[#5A5A5A] text-[16px] leading-relaxed mt-5 flex flex-col  ">
-                            <span className="font-[500]">Speed Without Sacrifice</span> 
+                            <span className="font-[500] text-black">Speed Without Sacrifice</span> 
                                     Fast, efficient workflows that never compromise on accuracy or patient
                                     safety.           
                     </p>
 
                        <p className="text-[#5A5A5A] text-[16px] leading-relaxed mt-5 flex flex-col ">
-                           <span className="font-[500]">Accessibility First</span> 
+                           <span className="font-[500] text-black">Accessibility First</span> 
                                 WCAG 2.1 AA compliant, keyboard navigation, screen reader support,
                                 and high contrast modes built in from the start.      
                       </p>

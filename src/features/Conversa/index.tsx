@@ -2,8 +2,10 @@ import Conversation from "./Conversation";
 import EightSection from "./EightSection";
 import FirstSection from "./FirstSection";
 import FourthSection from "./FourthSection";
+import InsightSection from "./InsightSection";
 import LastSection from "./LastSection";
 import NinthSection from "./NinthSection";
+import RigorousSection from "./RigorousSection";
 import SecondSection from "./SecondSection";
 import ThirdSection from "./ThirdSection";
 
@@ -25,6 +27,8 @@ const Conversa  : React.FC = () => {
           <ThirdSection/>
           <FourthSection/>
           <Conversation/>
+          <RigorousSection/>
+          <InsightSection/>
           <EightSection/>
           <NinthSection/>
           <LastSection/>
