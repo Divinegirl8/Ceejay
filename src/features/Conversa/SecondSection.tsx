@@ -30,8 +30,8 @@ const SecondSection : React.FC = () => {
                 </div>
             </div>
       
-            <div className="flex-1 flex items-center justify-center max-sm:mt-10">
-                <img src={procesImage} className=""/>    
+            <div className="flex-1  items-center justify-center max-sm:mt-10">
+                <img src={procesImage} className="w-full h-full object-cover"/>    
             </div>
 
 

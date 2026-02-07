@@ -51,7 +51,7 @@ const FirstSection: React.FC = () => {
               <div className="flex xl:flex-row flex-col lg:gap-10  justify-center max-md:items-center ">
                 <div className="md:flex-row md:flex justify-center gap-10">
                     <img src={orangeImage} alt="picture one" className="w-[280px] h-[350px] rounded-2xl lg:mt-7 mt-8 object-cover"/>
-              <img src={ashImage} alt="picture two" className="w-[280px] h-[420px] object-cover"/>    
+              <img src={ashImage} alt="picture two" className="w-[280px] h-[430px] object-cover"/>    
                 </div>
               <img src={secondImage} className=" xl:hidden -mt-9"/>
                    

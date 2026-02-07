@@ -6,6 +6,8 @@ import facebookIcon from "../../assets/new-portfolio/footer/Facebook.svg";
 import instagramIcon from "../../assets/new-portfolio/footer/Instagram.svg";
 import mediumIcon from "../../assets/new-portfolio/footer/Medium.svg";
 import xIcon from "../../assets/new-portfolio/footer/X.svg";
+import manImage from "../../assets/new-portfolio/menu/Mask group (17).png";
+import secondManImage from "../../assets/new-portfolio/menu/2 (19).png";
 
 
 
@@ -129,7 +131,9 @@ const NavBar: React.FC = () => {
                             </div>
                             
                             {/* Contact Information */}
-                            <div className="pt-6 border-t border-gray-400 max-md:pt-4">
+                            {/* Contact Information */}
+                        <div className="pt-24 max-md:pt-4">
+                            <div className="border-t border-gray-400 pt-8 max-md:pt-4">
                                 <div className="flex max-xl:items-center max-xl:justify-between gap-5 max-md:flex-col max-md:items-start max-md:gap-4">
                                     <span className="text-[15px] text-[#1F1F1F] max-md:text-[13px]">luckyekezie91@gmail.com</span>
                                     <div className="flex flex-row gap-2">
@@ -142,12 +146,17 @@ const NavBar: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                        </div>
 
                         {/* Desktop Image Placeholders (Hidden on Mobile) */}
-                        <div className="flex flex-row max-md:hidden">
-                            <div className="bg-[#AEAEAE] w-[200px] xl:w-[320px] h-[350px]"></div>
-                            <div className="bg-[#D7D7D7] w-[200px] xl:w-[320px] h-[350px]"></div>
-                        </div>
+                     <div className="flex flex-row max-md:hidden">
+  <div className="w-[200px] xl:w-[320px]">
+    <img src={manImage} className="w-full h-auto"/>
+  </div>
+  <div className="w-[200px] xl:w-[320px]">
+    <img src={secondManImage} className="w-full h-auto"/>
+  </div>
+</div>
                     </div>
 
                     {/* Backdrop Overlay */}

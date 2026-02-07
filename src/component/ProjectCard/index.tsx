@@ -109,9 +109,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </div>
 
               <div className="xl:hidden">
-                <button className="bg-transparent text-[#000000] text-[18px] font-semibold py-3 px-6 rounded-sm w-full  mt-10 border border-[#CBCBCB] disabled:cursor-not-allowed" onClick={handleMobileClick}>
-                      View Case Study
-                </button>
+                          <button 
+              className="bg-transparent text-[#000000] text-[18px] font-semibold py-3 px-6 rounded-sm w-full mt-10 border border-[#CBCBCB] disabled:cursor-not-allowed active:bg-[#238EFF] active:text-white transition-colors duration-150" 
+              onClick={handleMobileClick}
+            >
+              View Case Study
+            </button>
               </div>
             </div>
 
