@@ -75,7 +75,7 @@ const NavBar: React.FC = () => {
                     <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('ai')}>
                         AI JOURNEY
                     </span>
-                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('teaching')}>
+                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('contact')}>
                         CONTACT ME   </span>
                     <span className="cursor-pointer whitespace-nowrap" onClick={openResume}>
                         RESUME
