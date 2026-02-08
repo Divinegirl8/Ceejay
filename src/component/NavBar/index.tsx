@@ -76,10 +76,9 @@ const NavBar: React.FC = () => {
                         AI JOURNEY
                     </span>
                     <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('teaching')}>
-                        TEACHING & MENTORSHIP
-                    </span>
-                    <span className="cursor-pointer whitespace-nowrap" onClick={() => handleNavigation('contact')}>
-                        CONTACT ME
+                        CONTACT ME   </span>
+                    <span className="cursor-pointer whitespace-nowrap" onClick={openResume}>
+                        RESUME
                     </span>
                 </div>
 
@@ -123,16 +122,16 @@ const NavBar: React.FC = () => {
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('home')}>Home</span>
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('portfolio')}>Portfolio</span>
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('ai')}>AI journey</span>
-                                <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('teaching')}>Teaching & mentorship</span>
+                                {/* <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('teaching')}>Teaching & mentorship</span> */}
                                 <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={() => handleNavigation('contact')}>Contact me</span>
                                 <span className="cursor-pointer hover:opacity-70" onClick={() => handleMenuNavigation("about/me")}>About me</span>
-                                <span className="cursor-pointer hover:opacity-70" onClick={openResume}>My resume</span>
+                                <span className="cursor-pointer hover:opacity-70 lg:hidden" onClick={openResume}>My resume</span>
                                 <span className="cursor-pointer hover:opacity-70"  onClick={() => handleMenuNavigation("publications")}>Publications</span>
                             </div>
                             
+                        
                             {/* Contact Information */}
-                            {/* Contact Information */}
-                        <div className="pt-24 max-md:pt-4">
+                        <div className="pt-36 max-md:pt-4">
                             <div className="border-t border-gray-400 pt-8 max-md:pt-4">
                                 <div className="flex max-xl:items-center max-xl:justify-between gap-5 max-md:flex-col max-md:items-start max-md:gap-4">
                                     <span className="text-[15px] text-[#1F1F1F] max-md:text-[13px]">luckyekezie91@gmail.com</span>

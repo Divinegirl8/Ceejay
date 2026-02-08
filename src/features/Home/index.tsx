@@ -7,7 +7,7 @@ import NavBar from "../../component/NavBar";
 import Testimonial from "../../component/Testimonial";
 import AiJourney from "../AiJourney";
 import Portfolio from "../Portfolio";
-import Teaching from "../Teaching";
+// import Teaching from "../Teaching";
 
 const Home: React.FC = () => {
     const location = useLocation();
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
                 </div>
                 <Portfolio/>
                 <AiJourney/>
-                <Teaching/>
+                {/* <Teaching/> */}
                 <Testimonial/>
                 <Form/>
                 <Footer/>
