@@ -69,7 +69,7 @@ const FirstSection: React.FC = () => {
                          
                          <div className="lg:flex flex-col space-y-2 py-10 text-[21px] hidden">
                             <span><span className="font-bold">My Role:</span> Founder & Lead Product Designer</span>
-                            <span><span className="font-bold">Timeline:</span> June 2025 - Present</span>
+                            <span><span className="font-bold">Timeline:</span> August 2025 - Present</span>
                             <span><span className="font-bold">Platform:</span> Web Dashboard, Voice API, Mobile (iOS/Android)</span>
                             <span><span className="font-bold">Tools:</span> Figma, Voiceflow, Cursor AI, Midjourney</span>
                          </div>
@@ -93,7 +93,7 @@ const FirstSection: React.FC = () => {
                 <div className="md:flex flex-col justify-between hidden py-20 pr-2">
                     <div className="text-[#000000] text-sm tracking-wider z-10"
                         style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)'}}>
-                        Date <span className="font-[600]">01.01.2025</span>
+                        Date <span className="font-[600]">01.08.2025</span>
                     </div>
                     
                     <div className="text-[#000000] text-base font-medium tracking-wide z-10"
