@@ -1,4 +1,4 @@
-import sketchImage from "../../assets/new-portfolio/conversa/third-section/2 (11).png";
+import sketchImage from "../../assets/new-portfolio/conversa/conversation/2 (20).png";
 
 const FourthSection : React.FC = () => {
     return(
@@ -7,7 +7,7 @@ const FourthSection : React.FC = () => {
         <div className="xl:border-t  border-[#5A5A5A] flex flex-col xl:flex-row">
        
 
-       <div className="xl:w-1/2  border-[#5A5A5A] xl:border-r xl:px-20 md:px-10 px-7 md:py-20 py-10 bg-[#FBFBFB]">
+       <div className="xl:w-1/2  border-[#5A5A5A] xl:border-r xl:px-26 md:px-10 px-7 md:py-20 py-10 bg-[#FBFBFB]">
             <h1 className="text-[#000000] text-[25px] md:text-[32px] md:text-center font-medium md:mb-6 max-lg:pt-5 max-lg:border-t max-lg:border-[#5A5A5A]">
             Data & Metrics Focus
             </h1>
